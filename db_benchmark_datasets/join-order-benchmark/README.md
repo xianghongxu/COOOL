@@ -1,0 +1,1 @@
+refer to `https://github.com/gregrahn/join-order-benchmark` to replace the query files in this folder. Due to license issues, we cannot provide queries. The files in this folder are placeholders.

@@ -1,0 +1,790 @@
+all print will write to path record/postgresql/join-order-benchmark/TCNN/pair
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: pair
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: join-order-benchmark
+dbms: postgresql
+epochs: 10
+execute_sql: 0
+expname: recip
+lr: 0.001
+meta_save_path: record/postgresql/join-order-benchmark/execute_sql
+model: TCNN
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: 1
+save_path: record/postgresql/join-order-benchmark/TCNN/pair
+seed: 42
+shuffle_num: 1
+slow: 0
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+weighted: True
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+load JOB succ
+train, test, validation (85, 49) (19, 49) (9, 49)
+(85, 49, 3)
+(85, 49)
+construct training samples cost 0:00:01.524825, and there are 99960 training samples
+in channel 9
+Epoch 0/10 |loss: 2.236856| train set 2.537x speedup, test set 1.891x speedup, val set 0.741x speedup, step: 1, train time 137.47 s
+Epoch 1/10 |loss: 1.714007| train set 3.031x speedup, test set 1.688x speedup, val set 0.738x speedup, step: 2, train time 140.89 s
+Epoch 2/10 |loss: 1.463785| train set 2.725x speedup, test set 1.936x speedup, val set 0.747x speedup, step: 1, train time 142.00 s
+Epoch 3/10 |loss: 1.326382| train set 3.107x speedup, test set 1.771x speedup, val set 0.747x speedup, step: 1, train time 140.99 s
+Epoch 4/10 |loss: 1.230385| train set 3.252x speedup, test set 1.771x speedup, val set 0.753x speedup, step: 1, train time 139.76 s
+Epoch 5/10 |loss: 1.149249| train set 3.213x speedup, test set 1.795x speedup, val set 0.627x speedup, step: 2, train time 141.01 s
+Epoch 6/10 |loss: 1.121324| train set 3.107x speedup, test set 1.788x speedup, val set 0.830x speedup, step: 1, train time 143.68 s
+Epoch 7/10 |loss: 1.088234| train set 3.195x speedup, test set 1.935x speedup, val set 0.829x speedup, step: 2, train time 141.37 s
+Epoch 8/10 |loss: 1.006996| train set 3.067x speedup, test set 1.841x speedup, val set 0.753x speedup, step: 3, train time 143.49 s
+Epoch 9/10 |loss: 1.000303| train set 3.204x speedup, test set 1.864x speedup, val set 0.684x speedup, step: 4, train time 144.98 s
+Training per epoch cost 141.565 s
+Optimal speedup on test set is 1.999x
+01, opt runtime 1.315s, model runtime 1.315s, pg runtime 1.315s, speedup 1.000x
+02, opt runtime 0.206s, model runtime 0.211s, pg runtime 0.206s, speedup 0.978x
+03, opt runtime 0.509s, model runtime 0.509s, pg runtime 0.580s, speedup 1.139x
+04, opt runtime 2.719s, model runtime 2.719s, pg runtime 3.112s, speedup 1.144x
+05, opt runtime 3.248s, model runtime 3.248s, pg runtime 10.538s, speedup 3.244x
+06, opt runtime 1.876s, model runtime 1.876s, pg runtime 6.089s, speedup 3.247x
+07, opt runtime 0.491s, model runtime 1.042s, pg runtime 0.545s, speedup 0.523x
+08, opt runtime 0.012s, model runtime 0.083s, pg runtime 0.080s, speedup 0.968x
+09, opt runtime 0.053s, model runtime 0.053s, pg runtime 0.053s, speedup 1.000x
+10, opt runtime 0.919s, model runtime 1.048s, pg runtime 0.942s, speedup 0.898x
+11, opt runtime 0.183s, model runtime 1.314s, pg runtime 0.189s, speedup 0.144x
+12, opt runtime 0.294s, model runtime 0.294s, pg runtime 0.298s, speedup 1.014x
+13, opt runtime 0.154s, model runtime 0.154s, pg runtime 0.154s, speedup 1.000x
+14, opt runtime 0.102s, model runtime 0.102s, pg runtime 0.102s, speedup 1.000x
+15, opt runtime 0.313s, model runtime 0.371s, pg runtime 0.313s, speedup 0.844x
+16, opt runtime 1.737s, model runtime 1.737s, pg runtime 5.994s, speedup 3.452x
+17, opt runtime 0.151s, model runtime 0.200s, pg runtime 0.183s, speedup 0.911x
+18, opt runtime 0.399s, model runtime 0.399s, pg runtime 0.404s, speedup 1.013x
+19, opt runtime 2.238s, model runtime 2.238s, pg runtime 2.718s, speedup 1.215x
+====================
+best train speedup epoch: 4, train speedup 3.252, test speedup 1.771, val speedup 0.753
+best test speedup epoch: 2, train speedup 2.725, test speedup 1.936, val speedup 0.747
+best validation speedup epoch: 6, train speedup 3.107, test speedup 1.788, val speedup 0.830
+last model at epoch 9, train speedup 3.204, test speedup 1.864, val speedup 0.684
+execution cost 0:23:57.761220
+==================================================
+all print will write to path record/postgresql/join-order-benchmark/TCNN/pair
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: pair
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: join-order-benchmark
+dbms: postgresql
+epochs: 10
+execute_sql: 0
+expname: recip
+lr: 0.001
+meta_save_path: record/postgresql/join-order-benchmark/execute_sql
+model: TCNN
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: 1
+save_path: record/postgresql/join-order-benchmark/TCNN/pair
+seed: 42
+shuffle_num: 1
+slow: 0
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+weighted: True
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+load JOB succ
+train, test, validation (85, 49) (19, 49) (9, 49)
+(85, 49, 3)
+(85, 49)
+construct training samples cost 0:00:01.708171, and there are 99960 training samples
+in channel 9
+Epoch 0/10 |loss: 2.236173| train set 2.597x speedup, test set 1.643x speedup, val set 0.741x speedup, step: 1, train time 134.42 s
+Epoch 1/10 |loss: 1.725516| train set 2.691x speedup, test set 1.760x speedup, val set 0.815x speedup, step: 1, train time 134.89 s
+Epoch 2/10 |loss: 1.484037| train set 2.644x speedup, test set 1.914x speedup, val set 0.822x speedup, step: 1, train time 134.41 s
+Epoch 3/10 |loss: 1.340710| train set 3.164x speedup, test set 1.510x speedup, val set 0.747x speedup, step: 2, train time 135.88 s
+Epoch 4/10 |loss: 1.243141| train set 3.201x speedup, test set 1.932x speedup, val set 0.629x speedup, step: 3, train time 135.79 s
+Epoch 5/10 |loss: 1.162542| train set 3.185x speedup, test set 1.546x speedup, val set 0.747x speedup, step: 4, train time 136.80 s
+Epoch 6/10 |loss: 1.095344| train set 3.145x speedup, test set 1.579x speedup, val set 0.734x speedup, step: 5, train time 136.57 s
+Epoch 7/10 |loss: 1.085925| train set 3.209x speedup, test set 1.904x speedup, val set 1.675x speedup, step: 1, train time 135.09 s
+Epoch 8/10 |loss: 1.024990| train set 3.189x speedup, test set 1.916x speedup, val set 0.741x speedup, step: 2, train time 135.09 s
+Epoch 9/10 |loss: 0.997386| train set 3.232x speedup, test set 1.906x speedup, val set 0.815x speedup, step: 3, train time 134.88 s
+Training per epoch cost 135.384 s
+Optimal speedup on test set is 1.999x
+01, opt runtime 1.315s, model runtime 1.315s, pg runtime 1.315s, speedup 1.000x
+02, opt runtime 0.206s, model runtime 0.211s, pg runtime 0.206s, speedup 0.978x
+03, opt runtime 0.509s, model runtime 0.509s, pg runtime 0.580s, speedup 1.139x
+04, opt runtime 2.719s, model runtime 2.719s, pg runtime 3.112s, speedup 1.144x
+05, opt runtime 3.248s, model runtime 3.248s, pg runtime 10.538s, speedup 3.244x
+06, opt runtime 1.876s, model runtime 1.919s, pg runtime 6.089s, speedup 3.174x
+07, opt runtime 0.491s, model runtime 0.805s, pg runtime 0.545s, speedup 0.676x
+08, opt runtime 0.012s, model runtime 0.083s, pg runtime 0.080s, speedup 0.968x
+09, opt runtime 0.053s, model runtime 0.069s, pg runtime 0.053s, speedup 0.779x
+10, opt runtime 0.919s, model runtime 1.048s, pg runtime 0.942s, speedup 0.898x
+11, opt runtime 0.183s, model runtime 0.183s, pg runtime 0.189s, speedup 1.037x
+12, opt runtime 0.294s, model runtime 0.444s, pg runtime 0.298s, speedup 0.671x
+13, opt runtime 0.154s, model runtime 0.154s, pg runtime 0.154s, speedup 1.000x
+14, opt runtime 0.102s, model runtime 0.102s, pg runtime 0.102s, speedup 1.000x
+15, opt runtime 0.313s, model runtime 0.371s, pg runtime 0.313s, speedup 0.844x
+16, opt runtime 1.737s, model runtime 1.737s, pg runtime 5.994s, speedup 3.452x
+17, opt runtime 0.151s, model runtime 0.200s, pg runtime 0.183s, speedup 0.911x
+18, opt runtime 0.399s, model runtime 0.404s, pg runtime 0.404s, speedup 1.000x
+19, opt runtime 2.238s, model runtime 2.238s, pg runtime 2.718s, speedup 1.215x
+====================
+best train speedup epoch: 9, train speedup 3.232, test speedup 1.906, val speedup 0.815
+best test speedup epoch: 4, train speedup 3.201, test speedup 1.932, val speedup 0.629
+best validation speedup epoch: 7, train speedup 3.209, test speedup 1.904, val speedup 1.675
+last model at epoch 9, train speedup 3.232, test speedup 1.906, val speedup 0.815
+execution cost 0:22:53.502744
+==================================================
+all print will write to path record/postgresql/join-order-benchmark/TCNN/pair
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: pair
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: join-order-benchmark
+dbms: postgresql
+epochs: 10
+execute_sql: 0
+expname: recip
+lr: 0.001
+meta_save_path: record/postgresql/join-order-benchmark/execute_sql
+model: TCNN
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: 1
+save_path: record/postgresql/join-order-benchmark/TCNN/pair
+seed: 42
+shuffle_num: 1
+slow: 0
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+weighted: True
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+load JOB succ
+train, test, validation (85, 49) (19, 49) (9, 49)
+(85, 49, 3)
+(85, 49)
+construct training samples cost 0:00:01.690776, and there are 99960 training samples
+in channel 9
+Epoch 0/10 |loss: 2.245386| train set 2.594x speedup, test set 1.807x speedup, val set 0.734x speedup, step: 1, train time 140.02 s
+Epoch 1/10 |loss: 1.731063| train set 3.125x speedup, test set 1.808x speedup, val set 0.806x speedup, step: 1, train time 144.50 s
+Epoch 2/10 |loss: 1.492329| train set 2.522x speedup, test set 1.658x speedup, val set 0.822x speedup, step: 1, train time 146.99 s
+Epoch 3/10 |loss: 1.344184| train set 3.168x speedup, test set 1.611x speedup, val set 0.747x speedup, step: 2, train time 144.10 s
+Epoch 4/10 |loss: 1.255126| train set 2.771x speedup, test set 1.702x speedup, val set 0.822x speedup, step: 1, train time 144.17 s
+Epoch 5/10 |loss: 1.165382| train set 3.231x speedup, test set 1.612x speedup, val set 0.747x speedup, step: 2, train time 144.60 s
+Epoch 6/10 |loss: 1.148432| train set 2.749x speedup, test set 1.648x speedup, val set 0.822x speedup, step: 1, train time 143.80 s
+Epoch 7/10 |loss: 1.099609| train set 3.199x speedup, test set 1.816x speedup, val set 0.815x speedup, step: 2, train time 144.39 s
+Epoch 8/10 |loss: 1.038518| train set 3.174x speedup, test set 1.612x speedup, val set 1.695x speedup, step: 1, train time 144.50 s
+Epoch 9/10 |loss: 0.998098| train set 3.207x speedup, test set 1.642x speedup, val set 0.815x speedup, step: 2, train time 146.60 s
+Training per epoch cost 144.366 s
+Optimal speedup on test set is 1.999x
+01, opt runtime 1.315s, model runtime 1.315s, pg runtime 1.315s, speedup 1.000x
+02, opt runtime 0.206s, model runtime 0.206s, pg runtime 0.206s, speedup 1.000x
+03, opt runtime 0.509s, model runtime 0.509s, pg runtime 0.580s, speedup 1.139x
+04, opt runtime 2.719s, model runtime 2.719s, pg runtime 3.112s, speedup 1.144x
+05, opt runtime 3.248s, model runtime 3.248s, pg runtime 10.538s, speedup 3.244x
+06, opt runtime 1.876s, model runtime 1.876s, pg runtime 6.089s, speedup 3.247x
+07, opt runtime 0.491s, model runtime 0.805s, pg runtime 0.545s, speedup 0.676x
+08, opt runtime 0.012s, model runtime 0.083s, pg runtime 0.080s, speedup 0.968x
+09, opt runtime 0.053s, model runtime 0.056s, pg runtime 0.053s, speedup 0.954x
+10, opt runtime 0.919s, model runtime 1.048s, pg runtime 0.942s, speedup 0.898x
+11, opt runtime 0.183s, model runtime 1.314s, pg runtime 0.189s, speedup 0.144x
+12, opt runtime 0.294s, model runtime 0.294s, pg runtime 0.298s, speedup 1.014x
+13, opt runtime 0.154s, model runtime 0.154s, pg runtime 0.154s, speedup 1.000x
+14, opt runtime 0.102s, model runtime 0.102s, pg runtime 0.102s, speedup 1.000x
+15, opt runtime 0.313s, model runtime 0.313s, pg runtime 0.313s, speedup 1.000x
+16, opt runtime 1.737s, model runtime 1.737s, pg runtime 5.994s, speedup 3.452x
+17, opt runtime 0.151s, model runtime 0.200s, pg runtime 0.183s, speedup 0.911x
+18, opt runtime 0.399s, model runtime 2.274s, pg runtime 0.404s, speedup 0.178x
+19, opt runtime 2.238s, model runtime 2.718s, pg runtime 2.718s, speedup 1.000x
+====================
+best train speedup epoch: 5, train speedup 3.231, test speedup 1.612, val speedup 0.747
+best test speedup epoch: 7, train speedup 3.199, test speedup 1.816, val speedup 0.815
+best validation speedup epoch: 8, train speedup 3.174, test speedup 1.612, val speedup 1.695
+last model at epoch 9, train speedup 3.207, test speedup 1.642, val speedup 0.815
+execution cost 0:24:22.839532
+==================================================
+all print will write to path record/postgresql/join-order-benchmark/TCNN/pair
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: pair
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: join-order-benchmark
+dbms: postgresql
+epochs: 10
+execute_sql: 0
+expname: recip
+lr: 0.001
+meta_save_path: record/postgresql/join-order-benchmark/execute_sql
+model: TCNN
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: 1
+save_path: record/postgresql/join-order-benchmark/TCNN/pair
+seed: 42
+shuffle_num: 1
+slow: 0
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+weighted: True
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+load JOB succ
+train, test, validation (85, 49) (19, 49) (9, 49)
+(85, 49, 3)
+(85, 49)
+construct training samples cost 0:00:01.532161, and there are 99960 training samples
+in channel 9
+Epoch 0/10 |loss: 2.242169| train set 2.482x speedup, test set 1.382x speedup, val set 1.390x speedup, step: 1, train time 140.95 s
+Epoch 1/10 |loss: 1.722391| train set 3.052x speedup, test set 1.875x speedup, val set 0.820x speedup, step: 2, train time 147.01 s
+Epoch 2/10 |loss: 1.471435| train set 2.643x speedup, test set 1.293x speedup, val set 0.544x speedup, step: 3, train time 143.91 s
+Epoch 3/10 |loss: 1.323203| train set 3.114x speedup, test set 1.666x speedup, val set 0.544x speedup, step: 4, train time 142.09 s
+Epoch 4/10 |loss: 1.229521| train set 3.189x speedup, test set 1.823x speedup, val set 0.753x speedup, step: 5, train time 141.39 s
+Epoch 5/10 |loss: 1.132505| train set 3.222x speedup, test set 1.821x speedup, val set 0.829x speedup, step: 6, train time 144.60 s
+Epoch 6/10 |loss: 1.098715| train set 3.170x speedup, test set 1.857x speedup, val set 0.753x speedup, step: 7, train time 144.19 s
+Epoch 7/10 |loss: 1.047641| train set 3.219x speedup, test set 1.857x speedup, val set 0.753x speedup, step: 8, train time 146.80 s
+Epoch 8/10 |loss: 1.001520| train set 3.180x speedup, test set 1.817x speedup, val set 0.829x speedup, step: 9, train time 149.50 s
+Epoch 9/10 |loss: 0.988329| train set 3.230x speedup, test set 1.910x speedup, val set 0.539x speedup, step: 10, train time 146.70 s
+Training per epoch cost 144.714 s
+Optimal speedup on test set is 1.999x
+01, opt runtime 1.315s, model runtime 1.315s, pg runtime 1.315s, speedup 1.000x
+02, opt runtime 0.206s, model runtime 0.211s, pg runtime 0.206s, speedup 0.978x
+03, opt runtime 0.509s, model runtime 0.509s, pg runtime 0.580s, speedup 1.139x
+04, opt runtime 2.719s, model runtime 2.719s, pg runtime 3.112s, speedup 1.144x
+05, opt runtime 3.248s, model runtime 9.856s, pg runtime 10.538s, speedup 1.069x
+06, opt runtime 1.876s, model runtime 1.919s, pg runtime 6.089s, speedup 3.174x
+07, opt runtime 0.491s, model runtime 0.805s, pg runtime 0.545s, speedup 0.676x
+08, opt runtime 0.012s, model runtime 0.083s, pg runtime 0.080s, speedup 0.968x
+09, opt runtime 0.053s, model runtime 0.053s, pg runtime 0.053s, speedup 1.000x
+10, opt runtime 0.919s, model runtime 0.919s, pg runtime 0.942s, speedup 1.024x
+11, opt runtime 0.183s, model runtime 0.184s, pg runtime 0.189s, speedup 1.030x
+12, opt runtime 0.294s, model runtime 0.294s, pg runtime 0.298s, speedup 1.014x
+13, opt runtime 0.154s, model runtime 0.154s, pg runtime 0.154s, speedup 1.000x
+14, opt runtime 0.102s, model runtime 0.102s, pg runtime 0.102s, speedup 1.000x
+15, opt runtime 0.313s, model runtime 0.313s, pg runtime 0.313s, speedup 1.000x
+16, opt runtime 1.737s, model runtime 1.737s, pg runtime 5.994s, speedup 3.452x
+17, opt runtime 0.151s, model runtime 0.173s, pg runtime 0.183s, speedup 1.052x
+18, opt runtime 0.399s, model runtime 0.399s, pg runtime 0.404s, speedup 1.013x
+19, opt runtime 2.238s, model runtime 2.718s, pg runtime 2.718s, speedup 1.000x
+====================
+best train speedup epoch: 9, train speedup 3.230, test speedup 1.910, val speedup 0.539
+best test speedup epoch: 9, train speedup 3.230, test speedup 1.910, val speedup 0.539
+best validation speedup epoch: 0, train speedup 2.482, test speedup 1.382, val speedup 1.390
+last model at epoch 9, train speedup 3.230, test speedup 1.910, val speedup 0.539
+execution cost 0:24:27.764856
+==================================================
+all print will write to path record/postgresql/join-order-benchmark/TCNN/pair
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: pair
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: join-order-benchmark
+dbms: postgresql
+epochs: 10
+execute_sql: 0
+expname: recip
+lr: 0.001
+meta_save_path: record/postgresql/join-order-benchmark/execute_sql
+model: TCNN
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: 1
+save_path: record/postgresql/join-order-benchmark/TCNN/pair
+seed: 42
+shuffle_num: 1
+slow: 0
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+weighted: True
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+load JOB succ
+train, test, validation (85, 49) (19, 49) (9, 49)
+(85, 49, 3)
+(85, 49)
+construct training samples cost 0:00:01.545981, and there are 99960 training samples
+in channel 9
+Epoch 0/10 |loss: 2.230696| train set 2.547x speedup, test set 1.821x speedup, val set 0.685x speedup, step: 1, train time 145.32 s
+Epoch 1/10 |loss: 1.711495| train set 2.715x speedup, test set 1.917x speedup, val set 1.697x speedup, step: 1, train time 147.69 s
+Epoch 2/10 |loss: 1.456972| train set 2.668x speedup, test set 1.945x speedup, val set 1.697x speedup, step: 1, train time 148.18 s
+Epoch 3/10 |loss: 1.313388| train set 3.150x speedup, test set 1.813x speedup, val set 1.675x speedup, step: 2, train time 147.09 s
+Epoch 4/10 |loss: 1.232179| train set 3.063x speedup, test set 1.916x speedup, val set 0.828x speedup, step: 3, train time 148.50 s
+Epoch 5/10 |loss: 1.158529| train set 3.218x speedup, test set 1.856x speedup, val set 1.697x speedup, step: 1, train time 148.49 s
+Epoch 6/10 |loss: 1.119739| train set 3.184x speedup, test set 1.940x speedup, val set 1.649x speedup, step: 2, train time 145.99 s
+Epoch 7/10 |loss: 1.076414| train set 3.193x speedup, test set 1.864x speedup, val set 1.695x speedup, step: 3, train time 147.50 s
+Epoch 8/10 |loss: 1.023982| train set 3.159x speedup, test set 1.863x speedup, val set 1.695x speedup, step: 4, train time 145.51 s
+Epoch 9/10 |loss: 1.005415| train set 3.233x speedup, test set 1.938x speedup, val set 1.726x speedup, step: 1, train time 146.99 s
+Training per epoch cost 147.125 s
+Optimal speedup on test set is 1.999x
+01, opt runtime 1.315s, model runtime 1.315s, pg runtime 1.315s, speedup 1.000x
+02, opt runtime 0.206s, model runtime 0.206s, pg runtime 0.206s, speedup 1.000x
+03, opt runtime 0.509s, model runtime 0.509s, pg runtime 0.580s, speedup 1.139x
+04, opt runtime 2.719s, model runtime 2.719s, pg runtime 3.112s, speedup 1.144x
+05, opt runtime 3.248s, model runtime 3.248s, pg runtime 10.538s, speedup 3.244x
+06, opt runtime 1.876s, model runtime 1.876s, pg runtime 6.089s, speedup 3.247x
+07, opt runtime 0.491s, model runtime 0.545s, pg runtime 0.545s, speedup 1.000x
+08, opt runtime 0.012s, model runtime 0.083s, pg runtime 0.080s, speedup 0.968x
+09, opt runtime 0.053s, model runtime 0.056s, pg runtime 0.053s, speedup 0.954x
+10, opt runtime 0.919s, model runtime 1.048s, pg runtime 0.942s, speedup 0.898x
+11, opt runtime 0.183s, model runtime 0.186s, pg runtime 0.189s, speedup 1.017x
+12, opt runtime 0.294s, model runtime 0.478s, pg runtime 0.298s, speedup 0.624x
+13, opt runtime 0.154s, model runtime 0.154s, pg runtime 0.154s, speedup 1.000x
+14, opt runtime 0.102s, model runtime 0.102s, pg runtime 0.102s, speedup 1.000x
+15, opt runtime 0.313s, model runtime 0.371s, pg runtime 0.313s, speedup 0.844x
+16, opt runtime 1.737s, model runtime 1.737s, pg runtime 5.994s, speedup 3.452x
+17, opt runtime 0.151s, model runtime 0.180s, pg runtime 0.183s, speedup 1.015x
+18, opt runtime 0.399s, model runtime 0.399s, pg runtime 0.404s, speedup 1.013x
+19, opt runtime 2.238s, model runtime 2.238s, pg runtime 2.718s, speedup 1.215x
+====================
+best train speedup epoch: 9, train speedup 3.233, test speedup 1.938, val speedup 1.726
+best test speedup epoch: 2, train speedup 2.668, test speedup 1.945, val speedup 1.697
+best validation speedup epoch: 9, train speedup 3.233, test speedup 1.938, val speedup 1.726
+last model at epoch 9, train speedup 3.233, test speedup 1.938, val speedup 1.726
+execution cost 0:24:49.399455
+==================================================
+all print will write to path record/postgresql/join-order-benchmark/TCNN/pair
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: pair
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: join-order-benchmark
+dbms: postgresql
+epochs: 10
+execute_sql: 0
+expname: recip
+lr: 0.001
+meta_save_path: record/postgresql/join-order-benchmark/execute_sql
+model: TCNN
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: 1
+save_path: record/postgresql/join-order-benchmark/TCNN/pair
+seed: 42
+shuffle_num: 1
+slow: 0
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+weighted: True
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+load JOB succ
+train, test, validation (85, 49) (19, 49) (9, 49)
+(85, 49, 3)
+(85, 49)
+construct training samples cost 0:00:01.560745, and there are 99960 training samples
+in channel 9
+Epoch 0/10 |loss: 2.243052| train set 2.519x speedup, test set 1.374x speedup, val set 0.752x speedup, step: 1, train time 144.66 s
+Epoch 1/10 |loss: 1.726142| train set 2.687x speedup, test set 1.906x speedup, val set 0.820x speedup, step: 1, train time 148.21 s
+Epoch 2/10 |loss: 1.456453| train set 2.479x speedup, test set 1.746x speedup, val set 0.537x speedup, step: 2, train time 144.40 s
+Epoch 3/10 |loss: 1.323299| train set 3.174x speedup, test set 1.812x speedup, val set 0.534x speedup, step: 3, train time 146.20 s
+Epoch 4/10 |loss: 1.233779| train set 3.162x speedup, test set 1.914x speedup, val set 0.541x speedup, step: 4, train time 145.68 s
+Epoch 5/10 |loss: 1.138419| train set 3.182x speedup, test set 1.863x speedup, val set 0.544x speedup, step: 5, train time 148.50 s
+Epoch 6/10 |loss: 1.120000| train set 3.158x speedup, test set 1.914x speedup, val set 0.534x speedup, step: 6, train time 147.29 s
+Epoch 7/10 |loss: 1.075771| train set 3.101x speedup, test set 1.910x speedup, val set 0.537x speedup, step: 7, train time 146.30 s
+Epoch 8/10 |loss: 1.005996| train set 3.189x speedup, test set 1.861x speedup, val set 0.537x speedup, step: 8, train time 145.51 s
+Epoch 9/10 |loss: 1.026536| train set 3.234x speedup, test set 1.903x speedup, val set 0.738x speedup, step: 9, train time 147.59 s
+Training per epoch cost 146.434 s
+Optimal speedup on test set is 1.999x
+01, opt runtime 1.315s, model runtime 1.315s, pg runtime 1.315s, speedup 1.000x
+02, opt runtime 0.206s, model runtime 0.211s, pg runtime 0.206s, speedup 0.978x
+03, opt runtime 0.509s, model runtime 0.509s, pg runtime 0.580s, speedup 1.139x
+04, opt runtime 2.719s, model runtime 2.719s, pg runtime 3.112s, speedup 1.144x
+05, opt runtime 3.248s, model runtime 3.248s, pg runtime 10.538s, speedup 3.244x
+06, opt runtime 1.876s, model runtime 1.919s, pg runtime 6.089s, speedup 3.174x
+07, opt runtime 0.491s, model runtime 0.796s, pg runtime 0.545s, speedup 0.685x
+08, opt runtime 0.012s, model runtime 0.083s, pg runtime 0.080s, speedup 0.968x
+09, opt runtime 0.053s, model runtime 0.056s, pg runtime 0.053s, speedup 0.954x
+10, opt runtime 0.919s, model runtime 1.048s, pg runtime 0.942s, speedup 0.898x
+11, opt runtime 0.183s, model runtime 0.184s, pg runtime 0.189s, speedup 1.030x
+12, opt runtime 0.294s, model runtime 0.478s, pg runtime 0.298s, speedup 0.624x
+13, opt runtime 0.154s, model runtime 0.154s, pg runtime 0.154s, speedup 1.000x
+14, opt runtime 0.102s, model runtime 0.102s, pg runtime 0.102s, speedup 1.000x
+15, opt runtime 0.313s, model runtime 0.371s, pg runtime 0.313s, speedup 0.844x
+16, opt runtime 1.737s, model runtime 1.737s, pg runtime 5.994s, speedup 3.452x
+17, opt runtime 0.151s, model runtime 0.173s, pg runtime 0.183s, speedup 1.052x
+18, opt runtime 0.399s, model runtime 0.399s, pg runtime 0.404s, speedup 1.013x
+19, opt runtime 2.238s, model runtime 2.238s, pg runtime 2.718s, speedup 1.215x
+====================
+best train speedup epoch: 9, train speedup 3.234, test speedup 1.903, val speedup 0.738
+best test speedup epoch: 6, train speedup 3.158, test speedup 1.914, val speedup 0.534
+best validation speedup epoch: 1, train speedup 2.687, test speedup 1.906, val speedup 0.820
+last model at epoch 9, train speedup 3.234, test speedup 1.903, val speedup 0.738
+execution cost 0:24:43.571752
+==================================================
+all print will write to path record/postgresql/join-order-benchmark/TCNN/pair
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: pair
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: join-order-benchmark
+dbms: postgresql
+epochs: 10
+execute_sql: 0
+expname: recip
+lr: 0.001
+meta_save_path: record/postgresql/join-order-benchmark/execute_sql
+model: TCNN
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: 1
+save_path: record/postgresql/join-order-benchmark/TCNN/pair
+seed: 42
+shuffle_num: 1
+slow: 0
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+weighted: True
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+load JOB succ
+train, test, validation (85, 49) (19, 49) (9, 49)
+(85, 49, 3)
+(85, 49)
+construct training samples cost 0:00:01.601024, and there are 99960 training samples
+in channel 9
+Epoch 0/10 |loss: 2.239671| train set 2.969x speedup, test set 1.654x speedup, val set 0.738x speedup, step: 1, train time 145.17 s
+Epoch 1/10 |loss: 1.719223| train set 2.857x speedup, test set 1.894x speedup, val set 0.731x speedup, step: 2, train time 146.58 s
+Epoch 2/10 |loss: 1.458716| train set 2.661x speedup, test set 1.914x speedup, val set 1.644x speedup, step: 1, train time 145.71 s
+Epoch 3/10 |loss: 1.307946| train set 3.109x speedup, test set 1.684x speedup, val set 0.748x speedup, step: 2, train time 147.46 s
+Epoch 4/10 |loss: 1.224363| train set 3.213x speedup, test set 1.863x speedup, val set 0.830x speedup, step: 3, train time 145.71 s
+Epoch 5/10 |loss: 1.130128| train set 3.216x speedup, test set 1.832x speedup, val set 0.741x speedup, step: 4, train time 146.49 s
+Epoch 6/10 |loss: 1.089530| train set 3.171x speedup, test set 1.809x speedup, val set 0.823x speedup, step: 5, train time 146.90 s
+Epoch 7/10 |loss: 1.062993| train set 3.191x speedup, test set 1.909x speedup, val set 0.835x speedup, step: 6, train time 146.30 s
+Epoch 8/10 |loss: 1.000927| train set 3.148x speedup, test set 1.855x speedup, val set 0.753x speedup, step: 7, train time 144.70 s
+Epoch 9/10 |loss: 0.997470| train set 3.207x speedup, test set 1.934x speedup, val set 0.830x speedup, step: 8, train time 143.90 s
+Training per epoch cost 145.893 s
+Optimal speedup on test set is 1.999x
+01, opt runtime 1.315s, model runtime 1.315s, pg runtime 1.315s, speedup 1.000x
+02, opt runtime 0.206s, model runtime 0.206s, pg runtime 0.206s, speedup 1.000x
+03, opt runtime 0.509s, model runtime 0.509s, pg runtime 0.580s, speedup 1.139x
+04, opt runtime 2.719s, model runtime 2.719s, pg runtime 3.112s, speedup 1.144x
+05, opt runtime 3.248s, model runtime 3.248s, pg runtime 10.538s, speedup 3.244x
+06, opt runtime 1.876s, model runtime 1.919s, pg runtime 6.089s, speedup 3.174x
+07, opt runtime 0.491s, model runtime 0.805s, pg runtime 0.545s, speedup 0.676x
+08, opt runtime 0.012s, model runtime 0.083s, pg runtime 0.080s, speedup 0.968x
+09, opt runtime 0.053s, model runtime 0.056s, pg runtime 0.053s, speedup 0.954x
+10, opt runtime 0.919s, model runtime 1.048s, pg runtime 0.942s, speedup 0.898x
+11, opt runtime 0.183s, model runtime 0.184s, pg runtime 0.189s, speedup 1.030x
+12, opt runtime 0.294s, model runtime 0.444s, pg runtime 0.298s, speedup 0.671x
+13, opt runtime 0.154s, model runtime 0.154s, pg runtime 0.154s, speedup 1.000x
+14, opt runtime 0.102s, model runtime 0.102s, pg runtime 0.102s, speedup 1.000x
+15, opt runtime 0.313s, model runtime 0.313s, pg runtime 0.313s, speedup 1.000x
+16, opt runtime 1.737s, model runtime 1.737s, pg runtime 5.994s, speedup 3.452x
+17, opt runtime 0.151s, model runtime 0.183s, pg runtime 0.183s, speedup 1.000x
+18, opt runtime 0.399s, model runtime 0.404s, pg runtime 0.404s, speedup 1.000x
+19, opt runtime 2.238s, model runtime 2.238s, pg runtime 2.718s, speedup 1.215x
+====================
+best train speedup epoch: 5, train speedup 3.216, test speedup 1.832, val speedup 0.741
+best test speedup epoch: 9, train speedup 3.207, test speedup 1.934, val speedup 0.830
+best validation speedup epoch: 2, train speedup 2.661, test speedup 1.914, val speedup 1.644
+last model at epoch 9, train speedup 3.207, test speedup 1.934, val speedup 0.830
+execution cost 0:24:38.680887
+==================================================
+all print will write to path record/postgresql/join-order-benchmark/TCNN/pair
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: pair
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: join-order-benchmark
+dbms: postgresql
+epochs: 10
+execute_sql: 0
+expname: recip
+lr: 0.001
+meta_save_path: record/postgresql/join-order-benchmark/execute_sql
+model: TCNN
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: 1
+save_path: record/postgresql/join-order-benchmark/TCNN/pair
+seed: 42
+shuffle_num: 1
+slow: 0
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+weighted: True
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+load JOB succ
+train, test, validation (85, 49) (19, 49) (9, 49)
+(85, 49, 3)
+(85, 49)
+construct training samples cost 0:00:01.526839, and there are 99960 training samples
+in channel 9
+Epoch 0/10 |loss: 2.245459| train set 2.605x speedup, test set 1.733x speedup, val set 0.745x speedup, step: 1, train time 141.12 s
+Epoch 1/10 |loss: 1.747294| train set 3.109x speedup, test set 1.493x speedup, val set 0.828x speedup, step: 1, train time 143.90 s
+Epoch 2/10 |loss: 1.484083| train set 2.642x speedup, test set 1.509x speedup, val set 0.544x speedup, step: 2, train time 144.39 s
+Epoch 3/10 |loss: 1.330461| train set 3.103x speedup, test set 1.669x speedup, val set 0.752x speedup, step: 3, train time 144.36 s
+Epoch 4/10 |loss: 1.243647| train set 3.121x speedup, test set 1.753x speedup, val set 0.753x speedup, step: 4, train time 146.50 s
+Epoch 5/10 |loss: 1.154532| train set 3.194x speedup, test set 1.558x speedup, val set 0.752x speedup, step: 5, train time 145.19 s
+Epoch 6/10 |loss: 1.129427| train set 3.132x speedup, test set 1.913x speedup, val set 0.752x speedup, step: 6, train time 146.40 s
+Epoch 7/10 |loss: 1.072827| train set 3.189x speedup, test set 1.793x speedup, val set 1.420x speedup, step: 1, train time 147.40 s
+Epoch 8/10 |loss: 0.997557| train set 2.748x speedup, test set 1.858x speedup, val set 1.420x speedup, step: 1, train time 146.58 s
+Epoch 9/10 |loss: 1.005356| train set 3.195x speedup, test set 1.847x speedup, val set 0.752x speedup, step: 2, train time 147.11 s
+Training per epoch cost 145.296 s
+Optimal speedup on test set is 1.999x
+01, opt runtime 1.315s, model runtime 1.315s, pg runtime 1.315s, speedup 1.000x
+02, opt runtime 0.206s, model runtime 0.211s, pg runtime 0.206s, speedup 0.978x
+03, opt runtime 0.509s, model runtime 0.509s, pg runtime 0.580s, speedup 1.139x
+04, opt runtime 2.719s, model runtime 2.719s, pg runtime 3.112s, speedup 1.144x
+05, opt runtime 3.248s, model runtime 3.248s, pg runtime 10.538s, speedup 3.244x
+06, opt runtime 1.876s, model runtime 1.919s, pg runtime 6.089s, speedup 3.174x
+07, opt runtime 0.491s, model runtime 0.805s, pg runtime 0.545s, speedup 0.676x
+08, opt runtime 0.012s, model runtime 0.083s, pg runtime 0.080s, speedup 0.968x
+09, opt runtime 0.053s, model runtime 0.056s, pg runtime 0.053s, speedup 0.954x
+10, opt runtime 0.919s, model runtime 1.048s, pg runtime 0.942s, speedup 0.898x
+11, opt runtime 0.183s, model runtime 0.186s, pg runtime 0.189s, speedup 1.017x
+12, opt runtime 0.294s, model runtime 0.478s, pg runtime 0.298s, speedup 0.624x
+13, opt runtime 0.154s, model runtime 0.154s, pg runtime 0.154s, speedup 1.000x
+14, opt runtime 0.102s, model runtime 0.102s, pg runtime 0.102s, speedup 1.000x
+15, opt runtime 0.313s, model runtime 0.313s, pg runtime 0.313s, speedup 1.000x
+16, opt runtime 1.737s, model runtime 1.737s, pg runtime 5.994s, speedup 3.452x
+17, opt runtime 0.151s, model runtime 0.200s, pg runtime 0.183s, speedup 0.911x
+18, opt runtime 0.399s, model runtime 0.399s, pg runtime 0.404s, speedup 1.013x
+19, opt runtime 2.238s, model runtime 2.718s, pg runtime 2.718s, speedup 1.000x
+====================
+best train speedup epoch: 9, train speedup 3.195, test speedup 1.847, val speedup 0.752
+best test speedup epoch: 6, train speedup 3.132, test speedup 1.913, val speedup 0.752
+best validation speedup epoch: 8, train speedup 2.748, test speedup 1.858, val speedup 1.420
+last model at epoch 9, train speedup 3.195, test speedup 1.847, val speedup 0.752
+execution cost 0:24:31.857927
+==================================================
+all print will write to path record/postgresql/join-order-benchmark/TCNN/pair
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: pair
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: join-order-benchmark
+dbms: postgresql
+epochs: 10
+execute_sql: 0
+expname: recip
+lr: 0.001
+meta_save_path: record/postgresql/join-order-benchmark/execute_sql
+model: TCNN
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: 1
+save_path: record/postgresql/join-order-benchmark/TCNN/pair
+seed: 42
+shuffle_num: 1
+slow: 0
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+weighted: True
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+load JOB succ
+train, test, validation (85, 49) (19, 49) (9, 49)
+(85, 49, 3)
+(85, 49)
+construct training samples cost 0:00:01.560781, and there are 99960 training samples
+in channel 9
+Epoch 0/10 |loss: 2.246851| train set 2.594x speedup, test set 1.732x speedup, val set 0.741x speedup, step: 1, train time 142.94 s
+Epoch 1/10 |loss: 1.711273| train set 2.952x speedup, test set 1.926x speedup, val set 0.811x speedup, step: 1, train time 146.00 s
+Epoch 2/10 |loss: 1.456965| train set 2.586x speedup, test set 1.927x speedup, val set 0.820x speedup, step: 1, train time 146.99 s
+Epoch 3/10 |loss: 1.321745| train set 2.724x speedup, test set 1.814x speedup, val set 0.822x speedup, step: 1, train time 147.00 s
+Epoch 4/10 |loss: 1.215106| train set 2.735x speedup, test set 1.876x speedup, val set 0.822x speedup, step: 1, train time 146.99 s
+Epoch 5/10 |loss: 1.158307| train set 3.239x speedup, test set 1.708x speedup, val set 0.815x speedup, step: 2, train time 146.81 s
+Epoch 6/10 |loss: 1.128663| train set 3.188x speedup, test set 1.692x speedup, val set 0.806x speedup, step: 3, train time 147.91 s
+Epoch 7/10 |loss: 1.076887| train set 3.226x speedup, test set 1.911x speedup, val set 0.806x speedup, step: 4, train time 145.20 s
+Epoch 8/10 |loss: 1.010211| train set 3.170x speedup, test set 1.691x speedup, val set 0.806x speedup, step: 5, train time 145.00 s
+Epoch 9/10 |loss: 1.008472| train set 3.223x speedup, test set 1.730x speedup, val set 0.806x speedup, step: 6, train time 146.20 s
+Training per epoch cost 146.104 s
+Optimal speedup on test set is 1.999x
+01, opt runtime 1.315s, model runtime 1.315s, pg runtime 1.315s, speedup 1.000x
+02, opt runtime 0.206s, model runtime 0.206s, pg runtime 0.206s, speedup 1.000x
+03, opt runtime 0.509s, model runtime 0.509s, pg runtime 0.580s, speedup 1.139x
+04, opt runtime 2.719s, model runtime 2.719s, pg runtime 3.112s, speedup 1.144x
+05, opt runtime 3.248s, model runtime 3.248s, pg runtime 10.538s, speedup 3.244x
+06, opt runtime 1.876s, model runtime 1.919s, pg runtime 6.089s, speedup 3.174x
+07, opt runtime 0.491s, model runtime 0.805s, pg runtime 0.545s, speedup 0.676x
+08, opt runtime 0.012s, model runtime 0.083s, pg runtime 0.080s, speedup 0.968x
+09, opt runtime 0.053s, model runtime 0.069s, pg runtime 0.053s, speedup 0.779x
+10, opt runtime 0.919s, model runtime 1.048s, pg runtime 0.942s, speedup 0.898x
+11, opt runtime 0.183s, model runtime 0.186s, pg runtime 0.189s, speedup 1.017x
+12, opt runtime 0.294s, model runtime 0.294s, pg runtime 0.298s, speedup 1.014x
+13, opt runtime 0.154s, model runtime 0.154s, pg runtime 0.154s, speedup 1.000x
+14, opt runtime 0.102s, model runtime 0.102s, pg runtime 0.102s, speedup 1.000x
+15, opt runtime 0.313s, model runtime 0.313s, pg runtime 0.313s, speedup 1.000x
+16, opt runtime 1.737s, model runtime 1.737s, pg runtime 5.994s, speedup 3.452x
+17, opt runtime 0.151s, model runtime 0.200s, pg runtime 0.183s, speedup 0.911x
+18, opt runtime 0.399s, model runtime 0.404s, pg runtime 0.404s, speedup 1.000x
+19, opt runtime 2.238s, model runtime 2.718s, pg runtime 2.718s, speedup 1.000x
+====================
+best train speedup epoch: 5, train speedup 3.239, test speedup 1.708, val speedup 0.815
+best test speedup epoch: 2, train speedup 2.586, test speedup 1.927, val speedup 0.820
+best validation speedup epoch: 4, train speedup 2.735, test speedup 1.876, val speedup 0.822
+last model at epoch 9, train speedup 3.223, test speedup 1.730, val speedup 0.806
+execution cost 0:24:40.828584
+==================================================
+all print will write to path record/postgresql/join-order-benchmark/TCNN/pair
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: pair
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: join-order-benchmark
+dbms: postgresql
+epochs: 10
+execute_sql: 0
+expname: recip
+lr: 0.001
+meta_save_path: record/postgresql/join-order-benchmark/execute_sql
+model: TCNN
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: 1
+save_path: record/postgresql/join-order-benchmark/TCNN/pair
+seed: 42
+shuffle_num: 1
+slow: 0
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+weighted: True
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+load JOB succ
+train, test, validation (85, 49) (19, 49) (9, 49)
+(85, 49, 3)
+(85, 49)
+construct training samples cost 0:00:01.635760, and there are 99960 training samples
+in channel 9
+Epoch 0/10 |loss: 2.239469| train set 2.902x speedup, test set 1.797x speedup, val set 0.741x speedup, step: 1, train time 147.27 s
+Epoch 1/10 |loss: 1.731147| train set 2.961x speedup, test set 1.813x speedup, val set 0.747x speedup, step: 1, train time 146.40 s
+Epoch 2/10 |loss: 1.493343| train set 2.671x speedup, test set 1.657x speedup, val set 0.828x speedup, step: 1, train time 148.48 s
+Epoch 3/10 |loss: 1.352488| train set 2.735x speedup, test set 1.865x speedup, val set 0.747x speedup, step: 2, train time 148.50 s
+Epoch 4/10 |loss: 1.270423| train set 3.169x speedup, test set 1.699x speedup, val set 0.747x speedup, step: 3, train time 147.80 s
+Epoch 5/10 |loss: 1.175675| train set 3.208x speedup, test set 1.704x speedup, val set 0.713x speedup, step: 4, train time 147.50 s
+Epoch 6/10 |loss: 1.135177| train set 3.148x speedup, test set 1.631x speedup, val set 0.822x speedup, step: 5, train time 149.58 s
+Epoch 7/10 |loss: 1.075774| train set 3.194x speedup, test set 1.907x speedup, val set 0.822x speedup, step: 6, train time 147.56 s
+Epoch 8/10 |loss: 1.043067| train set 3.152x speedup, test set 1.874x speedup, val set 0.822x speedup, step: 7, train time 148.31 s
+Epoch 9/10 |loss: 1.000336| train set 3.222x speedup, test set 1.945x speedup, val set 0.822x speedup, step: 8, train time 146.68 s
+Training per epoch cost 147.809 s
+Optimal speedup on test set is 1.999x
+01, opt runtime 1.315s, model runtime 1.315s, pg runtime 1.315s, speedup 1.000x
+02, opt runtime 0.206s, model runtime 0.211s, pg runtime 0.206s, speedup 0.978x
+03, opt runtime 0.509s, model runtime 0.509s, pg runtime 0.580s, speedup 1.139x
+04, opt runtime 2.719s, model runtime 2.719s, pg runtime 3.112s, speedup 1.144x
+05, opt runtime 3.248s, model runtime 3.248s, pg runtime 10.538s, speedup 3.244x
+06, opt runtime 1.876s, model runtime 1.876s, pg runtime 6.089s, speedup 3.247x
+07, opt runtime 0.491s, model runtime 0.805s, pg runtime 0.545s, speedup 0.676x
+08, opt runtime 0.012s, model runtime 0.083s, pg runtime 0.080s, speedup 0.968x
+09, opt runtime 0.053s, model runtime 0.056s, pg runtime 0.053s, speedup 0.954x
+10, opt runtime 0.919s, model runtime 0.919s, pg runtime 0.942s, speedup 1.024x
+11, opt runtime 0.183s, model runtime 1.314s, pg runtime 0.189s, speedup 0.144x
+12, opt runtime 0.294s, model runtime 0.294s, pg runtime 0.298s, speedup 1.014x
+13, opt runtime 0.154s, model runtime 0.154s, pg runtime 0.154s, speedup 1.000x
+14, opt runtime 0.102s, model runtime 0.102s, pg runtime 0.102s, speedup 1.000x
+15, opt runtime 0.313s, model runtime 0.371s, pg runtime 0.313s, speedup 0.844x
+16, opt runtime 1.737s, model runtime 1.737s, pg runtime 5.994s, speedup 3.452x
+17, opt runtime 0.151s, model runtime 0.180s, pg runtime 0.183s, speedup 1.015x
+18, opt runtime 0.399s, model runtime 2.274s, pg runtime 0.404s, speedup 0.178x
+19, opt runtime 2.238s, model runtime 2.238s, pg runtime 2.718s, speedup 1.215x
+====================
+best train speedup epoch: 9, train speedup 3.222, test speedup 1.945, val speedup 0.822
+best test speedup epoch: 9, train speedup 3.222, test speedup 1.945, val speedup 0.822
+best validation speedup epoch: 2, train speedup 2.671, test speedup 1.657, val speedup 0.828
+last model at epoch 9, train speedup 3.222, test speedup 1.945, val speedup 0.822
+execution cost 0:25:01.833993
+==================================================

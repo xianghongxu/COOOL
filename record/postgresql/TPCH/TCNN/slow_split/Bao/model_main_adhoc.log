@@ -1,0 +1,2589 @@
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:00.883593, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.045551| train set 0.877x speedup, test set 4.292x speedup, val set 0.624x speedup, step: 1
+Epoch 1/300 |loss: 0.012594| train set 1.412x speedup, test set 1.532x speedup, val set 1.000x speedup, step: 1
+Epoch 2/300 |loss: 0.008347| train set 1.228x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 3/300 |loss: 0.006710| train set 1.562x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 4/300 |loss: 0.005773| train set 1.574x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 5/300 |loss: 0.005241| train set 1.647x speedup, test set 2.258x speedup, val set 1.000x speedup, step: 1
+Epoch 6/300 |loss: 0.004822| train set 1.702x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 7/300 |loss: 0.004255| train set 1.685x speedup, test set 1.221x speedup, val set 1.000x speedup, step: 1
+Epoch 8/300 |loss: 0.003761| train set 1.921x speedup, test set 2.520x speedup, val set 0.911x speedup, step: 2
+Epoch 9/300 |loss: 0.003333| train set 1.680x speedup, test set 1.093x speedup, val set 1.000x speedup, step: 1
+Epoch 10/300 |loss: 0.003051| train set 1.931x speedup, test set 2.027x speedup, val set 1.000x speedup, step: 1
+Epoch 11/300 |loss: 0.002707| train set 1.922x speedup, test set 1.111x speedup, val set 1.000x speedup, step: 1
+Epoch 12/300 |loss: 0.002820| train set 1.941x speedup, test set 1.111x speedup, val set 1.000x speedup, step: 1
+Epoch 13/300 |loss: 0.002449| train set 1.900x speedup, test set 1.178x speedup, val set 1.000x speedup, step: 1
+Epoch 14/300 |loss: 0.001911| train set 2.013x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 2
+Epoch 15/300 |loss: 0.001982| train set 1.992x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 3
+Epoch 16/300 |loss: 0.001887| train set 1.642x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 4
+Epoch 17/300 |loss: 0.001564| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 5
+Epoch 18/300 |loss: 0.001294| train set 1.935x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001202| train set 1.657x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 2
+Epoch 20/300 |loss: 0.001633| train set 2.011x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 3
+Epoch 21/300 |loss: 0.001202| train set 2.020x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 4
+Epoch 22/300 |loss: 0.001097| train set 1.973x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 5
+Epoch 23/300 |loss: 0.001080| train set 1.974x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 6
+Epoch 24/300 |loss: 0.001256| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 7
+Epoch 25/300 |loss: 0.000998| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 8
+Epoch 26/300 |loss: 0.001061| train set 1.945x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 9
+Epoch 27/300 |loss: 0.001046| train set 2.017x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 10
+Epoch 28/300 |loss: 0.001080| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 11
+Epoch 29/300 |loss: 0.001047| train set 1.995x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 12
+Epoch 30/300 |loss: 0.001035| train set 2.013x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 13
+Epoch 31/300 |loss: 0.001079| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 14
+Epoch 32/300 |loss: 0.001072| train set 2.015x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 15
+Epoch 33/300 |loss: 0.001014| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 16
+Epoch 34/300 |loss: 0.000987| train set 2.018x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 17
+Epoch 35/300 |loss: 0.000972| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 18
+Epoch 36/300 |loss: 0.001107| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 19
+Epoch 37/300 |loss: 0.001012| train set 2.018x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 20
+Epoch 38/300 |loss: 0.001103| train set 2.017x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 21
+Epoch 39/300 |loss: 0.001195| train set 2.022x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 22
+early stopping at epoch 39
+Training per epoch cost 0.957 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 91.784s, pg runtime 91.784s, speedup 1.000x
+02, opt runtime 29.763s, model runtime 91.648s, pg runtime 91.648s, speedup 1.000x
+03, opt runtime 30.267s, model runtime 100.885s, pg runtime 100.885s, speedup 1.000x
+04, opt runtime 29.286s, model runtime 92.131s, pg runtime 92.131s, speedup 1.000x
+05, opt runtime 29.269s, model runtime 91.296s, pg runtime 91.296s, speedup 1.000x
+06, opt runtime 29.502s, model runtime 112.305s, pg runtime 112.305s, speedup 1.000x
+07, opt runtime 27.886s, model runtime 97.629s, pg runtime 97.629s, speedup 1.000x
+08, opt runtime 30.705s, model runtime 89.698s, pg runtime 89.698s, speedup 1.000x
+09, opt runtime 27.651s, model runtime 91.255s, pg runtime 91.255s, speedup 1.000x
+10, opt runtime 33.637s, model runtime 90.618s, pg runtime 90.618s, speedup 1.000x
+11, opt runtime 53.298s, model runtime 139.919s, pg runtime 148.707s, speedup 1.063x
+12, opt runtime 48.784s, model runtime 140.509s, pg runtime 78.349s, speedup 0.558x
+13, opt runtime 53.440s, model runtime 136.731s, pg runtime 140.742s, speedup 1.029x
+14, opt runtime 47.812s, model runtime 139.115s, pg runtime 83.069s, speedup 0.597x
+15, opt runtime 47.518s, model runtime 133.905s, pg runtime 75.736s, speedup 0.566x
+16, opt runtime 48.067s, model runtime 135.202s, pg runtime 81.014s, speedup 0.599x
+17, opt runtime 47.738s, model runtime 135.818s, pg runtime 76.021s, speedup 0.560x
+18, opt runtime 47.804s, model runtime 136.805s, pg runtime 81.177s, speedup 0.593x
+19, opt runtime 49.511s, model runtime 157.094s, pg runtime 87.329s, speedup 0.556x
+20, opt runtime 51.276s, model runtime 134.457s, pg runtime 79.222s, speedup 0.589x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 31, train speedup 2.022, test speedup 1.125, val speedup 0.911
+best test speedup epoch: 0, train speedup 0.877, test speedup 4.292, val speedup 0.624
+best validation speedup epoch: 18, train speedup 1.935, test speedup 1.125, val speedup 1.000
+last model at epoch 39, train speedup 2.022, test speedup 1.178, val speedup 0.911
+execution cost 0:01:42.648314
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:01.086778, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.045551| train set 0.877x speedup, test set 4.292x speedup, val set 0.624x speedup, step: 1
+Epoch 1/300 |loss: 0.012594| train set 1.412x speedup, test set 1.532x speedup, val set 1.000x speedup, step: 1
+Epoch 2/300 |loss: 0.008346| train set 1.228x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 3/300 |loss: 0.006698| train set 1.645x speedup, test set 1.216x speedup, val set 1.000x speedup, step: 1
+Epoch 4/300 |loss: 0.005724| train set 1.574x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 5/300 |loss: 0.005135| train set 1.680x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 6/300 |loss: 0.004783| train set 1.685x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 7/300 |loss: 0.004435| train set 1.701x speedup, test set 1.221x speedup, val set 1.000x speedup, step: 1
+Epoch 8/300 |loss: 0.003705| train set 1.916x speedup, test set 2.520x speedup, val set 1.000x speedup, step: 1
+Epoch 9/300 |loss: 0.003242| train set 1.680x speedup, test set 1.159x speedup, val set 1.000x speedup, step: 1
+Epoch 10/300 |loss: 0.002928| train set 1.964x speedup, test set 2.049x speedup, val set 0.934x speedup, step: 2
+Epoch 11/300 |loss: 0.002664| train set 1.923x speedup, test set 1.111x speedup, val set 1.000x speedup, step: 1
+Epoch 12/300 |loss: 0.002793| train set 1.997x speedup, test set 1.177x speedup, val set 0.911x speedup, step: 2
+Epoch 13/300 |loss: 0.002506| train set 1.900x speedup, test set 1.177x speedup, val set 0.911x speedup, step: 3
+Epoch 14/300 |loss: 0.001939| train set 2.022x speedup, test set 1.132x speedup, val set 0.911x speedup, step: 4
+Epoch 15/300 |loss: 0.001964| train set 2.016x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 5
+Epoch 16/300 |loss: 0.002765| train set 1.647x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 17/300 |loss: 0.001982| train set 1.997x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 2
+Epoch 18/300 |loss: 0.001271| train set 1.974x speedup, test set 1.122x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001157| train set 1.914x speedup, test set 1.112x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001479| train set 1.913x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001148| train set 2.019x speedup, test set 1.112x speedup, val set 0.911x speedup, step: 2
+Epoch 22/300 |loss: 0.001050| train set 1.978x speedup, test set 1.112x speedup, val set 0.911x speedup, step: 3
+Epoch 23/300 |loss: 0.001077| train set 1.976x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 4
+Epoch 24/300 |loss: 0.001170| train set 2.022x speedup, test set 1.122x speedup, val set 1.000x speedup, step: 1
+Epoch 25/300 |loss: 0.000980| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 2
+Epoch 26/300 |loss: 0.000999| train set 2.015x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 3
+Epoch 27/300 |loss: 0.001027| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 4
+Epoch 28/300 |loss: 0.001008| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 5
+Epoch 29/300 |loss: 0.001012| train set 1.994x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 6
+Epoch 30/300 |loss: 0.001057| train set 2.015x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 7
+Epoch 31/300 |loss: 0.001042| train set 2.018x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 8
+Epoch 32/300 |loss: 0.001086| train set 1.968x speedup, test set 1.125x speedup, val set 0.934x speedup, step: 9
+Epoch 33/300 |loss: 0.001020| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 10
+Epoch 34/300 |loss: 0.000995| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 11
+early stopping at epoch 34
+Training per epoch cost 0.948 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 91.784s, pg runtime 91.784s, speedup 1.000x
+02, opt runtime 29.763s, model runtime 91.648s, pg runtime 91.648s, speedup 1.000x
+03, opt runtime 30.267s, model runtime 100.885s, pg runtime 100.885s, speedup 1.000x
+04, opt runtime 29.286s, model runtime 118.456s, pg runtime 92.131s, speedup 0.778x
+05, opt runtime 29.269s, model runtime 91.296s, pg runtime 91.296s, speedup 1.000x
+06, opt runtime 29.502s, model runtime 124.239s, pg runtime 112.305s, speedup 0.904x
+07, opt runtime 27.886s, model runtime 97.629s, pg runtime 97.629s, speedup 1.000x
+08, opt runtime 30.705s, model runtime 89.698s, pg runtime 89.698s, speedup 1.000x
+09, opt runtime 27.651s, model runtime 91.255s, pg runtime 91.255s, speedup 1.000x
+10, opt runtime 33.637s, model runtime 90.618s, pg runtime 90.618s, speedup 1.000x
+11, opt runtime 53.298s, model runtime 139.919s, pg runtime 148.707s, speedup 1.063x
+12, opt runtime 48.784s, model runtime 140.509s, pg runtime 78.349s, speedup 0.558x
+13, opt runtime 53.440s, model runtime 136.731s, pg runtime 140.742s, speedup 1.029x
+14, opt runtime 47.812s, model runtime 139.115s, pg runtime 83.069s, speedup 0.597x
+15, opt runtime 47.518s, model runtime 133.905s, pg runtime 75.736s, speedup 0.566x
+16, opt runtime 48.067s, model runtime 135.202s, pg runtime 81.014s, speedup 0.599x
+17, opt runtime 47.738s, model runtime 135.818s, pg runtime 76.021s, speedup 0.560x
+18, opt runtime 47.804s, model runtime 136.805s, pg runtime 81.177s, speedup 0.593x
+19, opt runtime 49.511s, model runtime 157.094s, pg runtime 87.329s, speedup 0.556x
+20, opt runtime 51.276s, model runtime 134.457s, pg runtime 79.222s, speedup 0.589x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 14, train speedup 2.022, test speedup 1.132, val speedup 0.911
+best test speedup epoch: 0, train speedup 0.877, test speedup 4.292, val speedup 0.624
+best validation speedup epoch: 24, train speedup 2.022, test speedup 1.122, val speedup 1.000
+last model at epoch 34, train speedup 2.021, test speedup 1.125, val speedup 0.911
+execution cost 0:01:31.748994
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:01.040411, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.045551| train set 0.877x speedup, test set 4.292x speedup, val set 0.624x speedup, step: 1
+Epoch 1/300 |loss: 0.012594| train set 1.412x speedup, test set 1.532x speedup, val set 1.000x speedup, step: 1
+Epoch 2/300 |loss: 0.008346| train set 1.228x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 3/300 |loss: 0.006698| train set 1.645x speedup, test set 1.216x speedup, val set 1.000x speedup, step: 1
+Epoch 4/300 |loss: 0.005724| train set 1.574x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 5/300 |loss: 0.005115| train set 1.650x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 6/300 |loss: 0.004784| train set 1.685x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 7/300 |loss: 0.004489| train set 1.684x speedup, test set 1.221x speedup, val set 1.000x speedup, step: 1
+Epoch 8/300 |loss: 0.003814| train set 1.921x speedup, test set 2.520x speedup, val set 0.911x speedup, step: 2
+Epoch 9/300 |loss: 0.003427| train set 1.940x speedup, test set 1.203x speedup, val set 1.000x speedup, step: 1
+Epoch 10/300 |loss: 0.003132| train set 1.964x speedup, test set 1.151x speedup, val set 0.911x speedup, step: 2
+Epoch 11/300 |loss: 0.002650| train set 1.921x speedup, test set 1.111x speedup, val set 1.000x speedup, step: 1
+Epoch 12/300 |loss: 0.002896| train set 1.921x speedup, test set 1.111x speedup, val set 1.000x speedup, step: 1
+Epoch 13/300 |loss: 0.002361| train set 1.904x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 2
+Epoch 14/300 |loss: 0.001732| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 3
+Epoch 15/300 |loss: 0.001995| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 4
+Epoch 16/300 |loss: 0.002152| train set 1.647x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 5
+Epoch 17/300 |loss: 0.001638| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 6
+Epoch 18/300 |loss: 0.001248| train set 1.969x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 7
+Epoch 19/300 |loss: 0.001130| train set 1.973x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 8
+Epoch 20/300 |loss: 0.001646| train set 1.997x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 9
+Epoch 21/300 |loss: 0.001183| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 10
+Epoch 22/300 |loss: 0.001046| train set 1.976x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 11
+Epoch 23/300 |loss: 0.001094| train set 1.975x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 12
+Epoch 24/300 |loss: 0.001233| train set 1.978x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 13
+Epoch 25/300 |loss: 0.001022| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 14
+Epoch 26/300 |loss: 0.001046| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 15
+Epoch 27/300 |loss: 0.001035| train set 1.975x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 16
+Epoch 28/300 |loss: 0.001023| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 17
+Epoch 29/300 |loss: 0.001027| train set 1.997x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 18
+Epoch 30/300 |loss: 0.001049| train set 1.971x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 19
+Epoch 31/300 |loss: 0.001070| train set 2.019x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 20
+early stopping at epoch 31
+Training per epoch cost 0.991 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 99.906s, pg runtime 91.784s, speedup 0.919x
+02, opt runtime 29.763s, model runtime 99.246s, pg runtime 91.648s, speedup 0.923x
+03, opt runtime 30.267s, model runtime 99.382s, pg runtime 100.885s, speedup 1.015x
+04, opt runtime 29.286s, model runtime 118.456s, pg runtime 92.131s, speedup 0.778x
+05, opt runtime 29.269s, model runtime 116.896s, pg runtime 91.296s, speedup 0.781x
+06, opt runtime 29.502s, model runtime 124.239s, pg runtime 112.305s, speedup 0.904x
+07, opt runtime 27.886s, model runtime 120.312s, pg runtime 97.629s, speedup 0.811x
+08, opt runtime 30.705s, model runtime 101.271s, pg runtime 89.698s, speedup 0.886x
+09, opt runtime 27.651s, model runtime 105.385s, pg runtime 91.255s, speedup 0.866x
+10, opt runtime 33.637s, model runtime 110.814s, pg runtime 90.618s, speedup 0.818x
+11, opt runtime 53.298s, model runtime 148.707s, pg runtime 148.707s, speedup 1.000x
+12, opt runtime 48.784s, model runtime 140.509s, pg runtime 78.349s, speedup 0.558x
+13, opt runtime 53.440s, model runtime 140.742s, pg runtime 140.742s, speedup 1.000x
+14, opt runtime 47.812s, model runtime 139.115s, pg runtime 83.069s, speedup 0.597x
+15, opt runtime 47.518s, model runtime 133.905s, pg runtime 75.736s, speedup 0.566x
+16, opt runtime 48.067s, model runtime 135.202s, pg runtime 81.014s, speedup 0.599x
+17, opt runtime 47.738s, model runtime 135.818s, pg runtime 76.021s, speedup 0.560x
+18, opt runtime 47.804s, model runtime 136.805s, pg runtime 81.177s, speedup 0.593x
+19, opt runtime 49.511s, model runtime 157.094s, pg runtime 87.329s, speedup 0.556x
+20, opt runtime 51.276s, model runtime 134.457s, pg runtime 79.222s, speedup 0.589x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 15, train speedup 2.022, test speedup 1.125, val speedup 0.911
+best test speedup epoch: 0, train speedup 0.877, test speedup 4.292, val speedup 0.624
+best validation speedup epoch: 12, train speedup 1.921, test speedup 1.111, val speedup 1.000
+last model at epoch 31, train speedup 2.019, test speedup 1.178, val speedup 0.911
+execution cost 0:01:25.465475
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:01.124265, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.045551| train set 0.877x speedup, test set 4.292x speedup, val set 0.624x speedup, step: 1
+Epoch 1/300 |loss: 0.012594| train set 1.412x speedup, test set 1.532x speedup, val set 1.000x speedup, step: 1
+Epoch 2/300 |loss: 0.008346| train set 1.228x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 3/300 |loss: 0.006697| train set 1.645x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 4/300 |loss: 0.005674| train set 1.574x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 5/300 |loss: 0.005032| train set 1.699x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 6/300 |loss: 0.004696| train set 1.685x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 7/300 |loss: 0.004524| train set 1.685x speedup, test set 1.221x speedup, val set 1.000x speedup, step: 1
+Epoch 8/300 |loss: 0.003693| train set 1.919x speedup, test set 1.221x speedup, val set 1.000x speedup, step: 1
+Epoch 9/300 |loss: 0.003330| train set 1.680x speedup, test set 1.197x speedup, val set 1.000x speedup, step: 1
+Epoch 10/300 |loss: 0.003021| train set 1.964x speedup, test set 2.520x speedup, val set 0.934x speedup, step: 2
+Epoch 11/300 |loss: 0.002677| train set 1.903x speedup, test set 1.111x speedup, val set 1.000x speedup, step: 1
+Epoch 12/300 |loss: 0.002789| train set 1.994x speedup, test set 1.177x speedup, val set 1.000x speedup, step: 1
+Epoch 13/300 |loss: 0.002515| train set 1.669x speedup, test set 1.178x speedup, val set 1.000x speedup, step: 1
+Epoch 14/300 |loss: 0.002048| train set 2.014x speedup, test set 1.178x speedup, val set 1.000x speedup, step: 1
+Epoch 15/300 |loss: 0.002176| train set 2.008x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 2
+Epoch 16/300 |loss: 0.002251| train set 1.659x speedup, test set 1.112x speedup, val set 1.000x speedup, step: 1
+Epoch 17/300 |loss: 0.001675| train set 2.022x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 18/300 |loss: 0.001328| train set 1.973x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001232| train set 1.913x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001755| train set 2.013x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001216| train set 2.021x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 2
+Epoch 22/300 |loss: 0.001027| train set 1.978x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 23/300 |loss: 0.001058| train set 1.975x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 24/300 |loss: 0.001350| train set 1.950x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 25/300 |loss: 0.001011| train set 2.021x speedup, test set 1.178x speedup, val set 1.000x speedup, step: 1
+Epoch 26/300 |loss: 0.001030| train set 2.021x speedup, test set 1.178x speedup, val set 1.000x speedup, step: 1
+Epoch 27/300 |loss: 0.001055| train set 2.018x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 2
+Epoch 28/300 |loss: 0.001018| train set 2.021x speedup, test set 1.137x speedup, val set 1.000x speedup, step: 1
+Epoch 29/300 |loss: 0.001051| train set 1.996x speedup, test set 1.178x speedup, val set 0.934x speedup, step: 2
+Epoch 30/300 |loss: 0.001065| train set 2.013x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 31/300 |loss: 0.001117| train set 2.019x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 2
+early stopping at epoch 31
+Training per epoch cost 0.957 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 91.784s, pg runtime 91.784s, speedup 1.000x
+02, opt runtime 29.763s, model runtime 91.648s, pg runtime 91.648s, speedup 1.000x
+03, opt runtime 30.267s, model runtime 100.885s, pg runtime 100.885s, speedup 1.000x
+04, opt runtime 29.286s, model runtime 92.131s, pg runtime 92.131s, speedup 1.000x
+05, opt runtime 29.269s, model runtime 91.296s, pg runtime 91.296s, speedup 1.000x
+06, opt runtime 29.502s, model runtime 112.305s, pg runtime 112.305s, speedup 1.000x
+07, opt runtime 27.886s, model runtime 97.629s, pg runtime 97.629s, speedup 1.000x
+08, opt runtime 30.705s, model runtime 89.698s, pg runtime 89.698s, speedup 1.000x
+09, opt runtime 27.651s, model runtime 91.255s, pg runtime 91.255s, speedup 1.000x
+10, opt runtime 33.637s, model runtime 90.618s, pg runtime 90.618s, speedup 1.000x
+11, opt runtime 53.298s, model runtime 139.919s, pg runtime 148.707s, speedup 1.063x
+12, opt runtime 48.784s, model runtime 140.509s, pg runtime 78.349s, speedup 0.558x
+13, opt runtime 53.440s, model runtime 136.731s, pg runtime 140.742s, speedup 1.029x
+14, opt runtime 47.812s, model runtime 139.115s, pg runtime 83.069s, speedup 0.597x
+15, opt runtime 47.518s, model runtime 133.905s, pg runtime 75.736s, speedup 0.566x
+16, opt runtime 48.067s, model runtime 135.202s, pg runtime 81.014s, speedup 0.599x
+17, opt runtime 47.738s, model runtime 135.818s, pg runtime 76.021s, speedup 0.560x
+18, opt runtime 47.804s, model runtime 136.805s, pg runtime 81.177s, speedup 0.593x
+19, opt runtime 49.511s, model runtime 157.094s, pg runtime 87.329s, speedup 0.556x
+20, opt runtime 51.276s, model runtime 134.457s, pg runtime 79.222s, speedup 0.589x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 17, train speedup 2.022, test speedup 1.125, val speedup 1.000
+best test speedup epoch: 0, train speedup 0.877, test speedup 4.292, val speedup 0.624
+best validation speedup epoch: 30, train speedup 2.013, test speedup 1.125, val speedup 1.000
+last model at epoch 31, train speedup 2.019, test speedup 1.178, val speedup 0.911
+execution cost 0:01:25.511408
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:01.338537, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.045551| train set 0.877x speedup, test set 4.292x speedup, val set 0.624x speedup, step: 1
+Epoch 1/300 |loss: 0.012594| train set 1.412x speedup, test set 1.532x speedup, val set 1.000x speedup, step: 1
+Epoch 2/300 |loss: 0.008346| train set 1.228x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 3/300 |loss: 0.006698| train set 1.645x speedup, test set 1.216x speedup, val set 1.000x speedup, step: 1
+Epoch 4/300 |loss: 0.005672| train set 1.574x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 5/300 |loss: 0.005109| train set 1.677x speedup, test set 1.538x speedup, val set 1.000x speedup, step: 1
+Epoch 6/300 |loss: 0.004775| train set 1.703x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 7/300 |loss: 0.004494| train set 1.685x speedup, test set 1.221x speedup, val set 1.000x speedup, step: 1
+Epoch 8/300 |loss: 0.003782| train set 1.927x speedup, test set 2.520x speedup, val set 1.000x speedup, step: 1
+Epoch 9/300 |loss: 0.003364| train set 1.680x speedup, test set 2.520x speedup, val set 1.000x speedup, step: 1
+Epoch 10/300 |loss: 0.003128| train set 1.964x speedup, test set 1.221x speedup, val set 0.911x speedup, step: 2
+Epoch 11/300 |loss: 0.002602| train set 1.917x speedup, test set 1.111x speedup, val set 1.000x speedup, step: 1
+Epoch 12/300 |loss: 0.002680| train set 1.964x speedup, test set 1.111x speedup, val set 0.911x speedup, step: 2
+Epoch 13/300 |loss: 0.002345| train set 1.667x speedup, test set 1.112x speedup, val set 1.000x speedup, step: 1
+Epoch 14/300 |loss: 0.001822| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 2
+Epoch 15/300 |loss: 0.001787| train set 2.016x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 3
+Epoch 16/300 |loss: 0.001419| train set 2.019x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 4
+Epoch 17/300 |loss: 0.001405| train set 2.020x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 5
+Epoch 18/300 |loss: 0.001218| train set 1.974x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 6
+Epoch 19/300 |loss: 0.001202| train set 1.974x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 7
+Epoch 20/300 |loss: 0.001400| train set 2.008x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 8
+Epoch 21/300 |loss: 0.001098| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 9
+Epoch 22/300 |loss: 0.001095| train set 1.977x speedup, test set 1.125x speedup, val set 0.925x speedup, step: 10
+Epoch 23/300 |loss: 0.001165| train set 1.973x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 11
+Epoch 24/300 |loss: 0.001337| train set 1.938x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 12
+Epoch 25/300 |loss: 0.001331| train set 1.996x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 13
+Epoch 26/300 |loss: 0.001146| train set 2.016x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 14
+Epoch 27/300 |loss: 0.001019| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 15
+Epoch 28/300 |loss: 0.001055| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 16
+Epoch 29/300 |loss: 0.001053| train set 1.994x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 17
+Epoch 30/300 |loss: 0.001059| train set 2.020x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 18
+Epoch 31/300 |loss: 0.001125| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 19
+Epoch 32/300 |loss: 0.001112| train set 1.968x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 20
+Epoch 33/300 |loss: 0.001027| train set 2.018x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 21
+Epoch 34/300 |loss: 0.000975| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 22
+Epoch 35/300 |loss: 0.000985| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 23
+Epoch 36/300 |loss: 0.001027| train set 2.017x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 24
+Epoch 37/300 |loss: 0.001056| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 25
+Epoch 38/300 |loss: 0.001079| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 26
+early stopping at epoch 38
+Training per epoch cost 0.967 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 99.906s, pg runtime 91.784s, speedup 0.919x
+02, opt runtime 29.763s, model runtime 99.246s, pg runtime 91.648s, speedup 0.923x
+03, opt runtime 30.267s, model runtime 99.382s, pg runtime 100.885s, speedup 1.015x
+04, opt runtime 29.286s, model runtime 118.456s, pg runtime 92.131s, speedup 0.778x
+05, opt runtime 29.269s, model runtime 116.896s, pg runtime 91.296s, speedup 0.781x
+06, opt runtime 29.502s, model runtime 124.239s, pg runtime 112.305s, speedup 0.904x
+07, opt runtime 27.886s, model runtime 120.312s, pg runtime 97.629s, speedup 0.811x
+08, opt runtime 30.705s, model runtime 101.271s, pg runtime 89.698s, speedup 0.886x
+09, opt runtime 27.651s, model runtime 105.385s, pg runtime 91.255s, speedup 0.866x
+10, opt runtime 33.637s, model runtime 110.814s, pg runtime 90.618s, speedup 0.818x
+11, opt runtime 53.298s, model runtime 139.919s, pg runtime 148.707s, speedup 1.063x
+12, opt runtime 48.784s, model runtime 140.509s, pg runtime 78.349s, speedup 0.558x
+13, opt runtime 53.440s, model runtime 136.731s, pg runtime 140.742s, speedup 1.029x
+14, opt runtime 47.812s, model runtime 139.115s, pg runtime 83.069s, speedup 0.597x
+15, opt runtime 47.518s, model runtime 133.905s, pg runtime 75.736s, speedup 0.566x
+16, opt runtime 48.067s, model runtime 135.202s, pg runtime 81.014s, speedup 0.599x
+17, opt runtime 47.738s, model runtime 135.818s, pg runtime 76.021s, speedup 0.560x
+18, opt runtime 47.804s, model runtime 136.805s, pg runtime 81.177s, speedup 0.593x
+19, opt runtime 49.511s, model runtime 157.094s, pg runtime 87.329s, speedup 0.556x
+20, opt runtime 51.276s, model runtime 134.457s, pg runtime 79.222s, speedup 0.589x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 37, train speedup 2.022, test speedup 1.125, val speedup 0.911
+best test speedup epoch: 0, train speedup 0.877, test speedup 4.292, val speedup 0.624
+best validation speedup epoch: 13, train speedup 1.667, test speedup 1.112, val speedup 1.000
+last model at epoch 38, train speedup 2.022, test speedup 1.125, val speedup 0.911
+execution cost 0:01:41.508961
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:01.106688, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.045551| train set 0.877x speedup, test set 4.292x speedup, val set 0.624x speedup, step: 1
+Epoch 1/300 |loss: 0.012594| train set 1.412x speedup, test set 1.532x speedup, val set 1.000x speedup, step: 1
+Epoch 2/300 |loss: 0.008346| train set 1.228x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 3/300 |loss: 0.006698| train set 1.645x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 4/300 |loss: 0.005680| train set 1.574x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 5/300 |loss: 0.005023| train set 1.677x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 6/300 |loss: 0.004544| train set 1.702x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 7/300 |loss: 0.004288| train set 1.685x speedup, test set 1.221x speedup, val set 1.000x speedup, step: 1
+Epoch 8/300 |loss: 0.003879| train set 1.997x speedup, test set 1.221x speedup, val set 1.000x speedup, step: 1
+Epoch 9/300 |loss: 0.003514| train set 1.944x speedup, test set 2.319x speedup, val set 1.000x speedup, step: 1
+Epoch 10/300 |loss: 0.003229| train set 2.022x speedup, test set 1.221x speedup, val set 0.911x speedup, step: 2
+Epoch 11/300 |loss: 0.002550| train set 1.921x speedup, test set 1.111x speedup, val set 1.000x speedup, step: 1
+Epoch 12/300 |loss: 0.002812| train set 1.942x speedup, test set 1.111x speedup, val set 1.000x speedup, step: 1
+Epoch 13/300 |loss: 0.002346| train set 1.897x speedup, test set 1.112x speedup, val set 1.000x speedup, step: 1
+Epoch 14/300 |loss: 0.001679| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 2
+Epoch 15/300 |loss: 0.001801| train set 2.015x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 3
+Epoch 16/300 |loss: 0.001625| train set 1.953x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 4
+Epoch 17/300 |loss: 0.001437| train set 2.018x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 5
+Epoch 18/300 |loss: 0.001428| train set 1.973x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 6
+Epoch 19/300 |loss: 0.001207| train set 1.978x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 7
+Epoch 20/300 |loss: 0.001654| train set 1.997x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001205| train set 2.019x speedup, test set 1.137x speedup, val set 1.000x speedup, step: 1
+Epoch 22/300 |loss: 0.001078| train set 1.977x speedup, test set 1.125x speedup, val set 0.934x speedup, step: 2
+Epoch 23/300 |loss: 0.001158| train set 1.974x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 24/300 |loss: 0.001181| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 2
+Epoch 25/300 |loss: 0.001003| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 3
+Epoch 26/300 |loss: 0.001036| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 4
+Epoch 27/300 |loss: 0.001028| train set 1.971x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 5
+Epoch 28/300 |loss: 0.001044| train set 2.020x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 6
+Epoch 29/300 |loss: 0.001026| train set 1.994x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 7
+Epoch 30/300 |loss: 0.001098| train set 2.016x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 31/300 |loss: 0.001199| train set 2.021x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 2
+early stopping at epoch 31
+Training per epoch cost 0.960 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 91.784s, pg runtime 91.784s, speedup 1.000x
+02, opt runtime 29.763s, model runtime 91.648s, pg runtime 91.648s, speedup 1.000x
+03, opt runtime 30.267s, model runtime 100.885s, pg runtime 100.885s, speedup 1.000x
+04, opt runtime 29.286s, model runtime 92.131s, pg runtime 92.131s, speedup 1.000x
+05, opt runtime 29.269s, model runtime 91.296s, pg runtime 91.296s, speedup 1.000x
+06, opt runtime 29.502s, model runtime 112.305s, pg runtime 112.305s, speedup 1.000x
+07, opt runtime 27.886s, model runtime 97.629s, pg runtime 97.629s, speedup 1.000x
+08, opt runtime 30.705s, model runtime 89.698s, pg runtime 89.698s, speedup 1.000x
+09, opt runtime 27.651s, model runtime 91.255s, pg runtime 91.255s, speedup 1.000x
+10, opt runtime 33.637s, model runtime 90.618s, pg runtime 90.618s, speedup 1.000x
+11, opt runtime 53.298s, model runtime 139.919s, pg runtime 148.707s, speedup 1.063x
+12, opt runtime 48.784s, model runtime 140.509s, pg runtime 78.349s, speedup 0.558x
+13, opt runtime 53.440s, model runtime 136.731s, pg runtime 140.742s, speedup 1.029x
+14, opt runtime 47.812s, model runtime 139.115s, pg runtime 83.069s, speedup 0.597x
+15, opt runtime 47.518s, model runtime 133.905s, pg runtime 75.736s, speedup 0.566x
+16, opt runtime 48.067s, model runtime 135.202s, pg runtime 81.014s, speedup 0.599x
+17, opt runtime 47.738s, model runtime 135.818s, pg runtime 76.021s, speedup 0.560x
+18, opt runtime 47.804s, model runtime 136.805s, pg runtime 81.177s, speedup 0.593x
+19, opt runtime 49.511s, model runtime 157.094s, pg runtime 87.329s, speedup 0.556x
+20, opt runtime 51.276s, model runtime 134.457s, pg runtime 79.222s, speedup 0.589x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 14, train speedup 2.022, test speedup 1.125, val speedup 0.911
+best test speedup epoch: 0, train speedup 0.877, test speedup 4.292, val speedup 0.624
+best validation speedup epoch: 30, train speedup 2.016, test speedup 1.125, val speedup 1.000
+last model at epoch 31, train speedup 2.021, test speedup 1.178, val speedup 0.911
+execution cost 0:01:24.930712
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:01.117269, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.045551| train set 0.877x speedup, test set 4.292x speedup, val set 0.624x speedup, step: 1
+Epoch 1/300 |loss: 0.012594| train set 1.412x speedup, test set 1.532x speedup, val set 1.000x speedup, step: 1
+Epoch 2/300 |loss: 0.008346| train set 1.228x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 3/300 |loss: 0.006697| train set 1.645x speedup, test set 1.216x speedup, val set 1.000x speedup, step: 1
+Epoch 4/300 |loss: 0.005747| train set 1.574x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 5/300 |loss: 0.005150| train set 1.677x speedup, test set 1.527x speedup, val set 1.000x speedup, step: 1
+Epoch 6/300 |loss: 0.004797| train set 1.702x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 7/300 |loss: 0.004363| train set 1.703x speedup, test set 1.221x speedup, val set 1.000x speedup, step: 1
+Epoch 8/300 |loss: 0.003720| train set 1.921x speedup, test set 2.520x speedup, val set 1.000x speedup, step: 1
+Epoch 9/300 |loss: 0.003287| train set 1.945x speedup, test set 1.182x speedup, val set 1.000x speedup, step: 1
+Epoch 10/300 |loss: 0.002980| train set 1.930x speedup, test set 2.444x speedup, val set 0.911x speedup, step: 2
+Epoch 11/300 |loss: 0.002604| train set 1.922x speedup, test set 1.111x speedup, val set 1.000x speedup, step: 1
+Epoch 12/300 |loss: 0.002550| train set 1.939x speedup, test set 1.111x speedup, val set 0.911x speedup, step: 2
+Epoch 13/300 |loss: 0.002209| train set 1.904x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 3
+Epoch 14/300 |loss: 0.001556| train set 2.022x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 4
+Epoch 15/300 |loss: 0.001601| train set 2.016x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 5
+Epoch 16/300 |loss: 0.001259| train set 2.022x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 6
+Epoch 17/300 |loss: 0.001374| train set 2.014x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 7
+Epoch 18/300 |loss: 0.001165| train set 1.978x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 8
+Epoch 19/300 |loss: 0.001201| train set 1.973x speedup, test set 1.162x speedup, val set 0.911x speedup, step: 9
+Epoch 20/300 |loss: 0.001361| train set 1.917x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 10
+Epoch 21/300 |loss: 0.001250| train set 1.978x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 11
+Epoch 22/300 |loss: 0.001137| train set 1.978x speedup, test set 1.122x speedup, val set 0.911x speedup, step: 12
+Epoch 23/300 |loss: 0.001189| train set 1.976x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 13
+Epoch 24/300 |loss: 0.001429| train set 2.022x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 14
+Epoch 25/300 |loss: 0.001085| train set 2.022x speedup, test set 1.137x speedup, val set 0.911x speedup, step: 15
+Epoch 26/300 |loss: 0.001037| train set 2.016x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 16
+Epoch 27/300 |loss: 0.001104| train set 2.017x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 17
+Epoch 28/300 |loss: 0.001040| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 18
+Epoch 29/300 |loss: 0.001018| train set 2.014x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 19
+Epoch 30/300 |loss: 0.001052| train set 2.020x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 20
+Epoch 31/300 |loss: 0.001080| train set 2.019x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 21
+Epoch 32/300 |loss: 0.001118| train set 1.972x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 22
+Epoch 33/300 |loss: 0.001005| train set 2.022x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 23
+Epoch 34/300 |loss: 0.000982| train set 2.020x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 24
+Epoch 35/300 |loss: 0.000982| train set 2.022x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 25
+Epoch 36/300 |loss: 0.001059| train set 2.017x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 26
+Epoch 37/300 |loss: 0.001130| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 27
+early stopping at epoch 37
+Training per epoch cost 0.942 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 99.906s, pg runtime 91.784s, speedup 0.919x
+02, opt runtime 29.763s, model runtime 99.246s, pg runtime 91.648s, speedup 0.923x
+03, opt runtime 30.267s, model runtime 99.382s, pg runtime 100.885s, speedup 1.015x
+04, opt runtime 29.286s, model runtime 118.456s, pg runtime 92.131s, speedup 0.778x
+05, opt runtime 29.269s, model runtime 116.896s, pg runtime 91.296s, speedup 0.781x
+06, opt runtime 29.502s, model runtime 124.239s, pg runtime 112.305s, speedup 0.904x
+07, opt runtime 27.886s, model runtime 120.312s, pg runtime 97.629s, speedup 0.811x
+08, opt runtime 30.705s, model runtime 101.271s, pg runtime 89.698s, speedup 0.886x
+09, opt runtime 27.651s, model runtime 105.385s, pg runtime 91.255s, speedup 0.866x
+10, opt runtime 33.637s, model runtime 110.814s, pg runtime 90.618s, speedup 0.818x
+11, opt runtime 53.298s, model runtime 148.707s, pg runtime 148.707s, speedup 1.000x
+12, opt runtime 48.784s, model runtime 140.509s, pg runtime 78.349s, speedup 0.558x
+13, opt runtime 53.440s, model runtime 140.742s, pg runtime 140.742s, speedup 1.000x
+14, opt runtime 47.812s, model runtime 139.115s, pg runtime 83.069s, speedup 0.597x
+15, opt runtime 47.518s, model runtime 133.905s, pg runtime 75.736s, speedup 0.566x
+16, opt runtime 48.067s, model runtime 135.202s, pg runtime 81.014s, speedup 0.599x
+17, opt runtime 47.738s, model runtime 135.818s, pg runtime 76.021s, speedup 0.560x
+18, opt runtime 47.804s, model runtime 136.805s, pg runtime 81.177s, speedup 0.593x
+19, opt runtime 49.511s, model runtime 157.094s, pg runtime 87.329s, speedup 0.556x
+20, opt runtime 51.276s, model runtime 134.457s, pg runtime 79.222s, speedup 0.589x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 14, train speedup 2.022, test speedup 1.178, val speedup 0.911
+best test speedup epoch: 0, train speedup 0.877, test speedup 4.292, val speedup 0.624
+best validation speedup epoch: 11, train speedup 1.922, test speedup 1.111, val speedup 1.000
+last model at epoch 37, train speedup 2.021, test speedup 1.125, val speedup 0.911
+execution cost 0:01:37.362793
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:01.117351, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.045551| train set 0.877x speedup, test set 4.292x speedup, val set 0.624x speedup, step: 1
+Epoch 1/300 |loss: 0.012594| train set 1.412x speedup, test set 1.532x speedup, val set 1.000x speedup, step: 1
+Epoch 2/300 |loss: 0.008347| train set 1.228x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 3/300 |loss: 0.006708| train set 1.562x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 4/300 |loss: 0.005714| train set 1.574x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 5/300 |loss: 0.005126| train set 1.680x speedup, test set 1.538x speedup, val set 1.000x speedup, step: 1
+Epoch 6/300 |loss: 0.004829| train set 1.685x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 7/300 |loss: 0.004461| train set 1.703x speedup, test set 1.221x speedup, val set 1.000x speedup, step: 1
+Epoch 8/300 |loss: 0.003822| train set 1.997x speedup, test set 2.520x speedup, val set 0.911x speedup, step: 2
+Epoch 9/300 |loss: 0.003358| train set 1.702x speedup, test set 1.166x speedup, val set 1.000x speedup, step: 1
+Epoch 10/300 |loss: 0.003077| train set 1.963x speedup, test set 1.187x speedup, val set 0.911x speedup, step: 2
+Epoch 11/300 |loss: 0.002576| train set 1.922x speedup, test set 1.111x speedup, val set 0.934x speedup, step: 3
+Epoch 12/300 |loss: 0.002674| train set 1.941x speedup, test set 1.177x speedup, val set 0.911x speedup, step: 4
+Epoch 13/300 |loss: 0.002356| train set 1.653x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 5
+Epoch 14/300 |loss: 0.001864| train set 2.021x speedup, test set 1.152x speedup, val set 0.911x speedup, step: 6
+Epoch 15/300 |loss: 0.001802| train set 2.016x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 7
+Epoch 16/300 |loss: 0.001413| train set 2.019x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 8
+Epoch 17/300 |loss: 0.001456| train set 2.015x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 18/300 |loss: 0.001260| train set 1.973x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 2
+Epoch 19/300 |loss: 0.001242| train set 2.021x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001305| train set 1.992x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 2
+Epoch 21/300 |loss: 0.001153| train set 2.022x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 3
+Epoch 22/300 |loss: 0.001184| train set 1.975x speedup, test set 1.119x speedup, val set 0.911x speedup, step: 4
+Epoch 23/300 |loss: 0.001263| train set 1.972x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 24/300 |loss: 0.001420| train set 1.898x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 2
+Epoch 25/300 |loss: 0.001074| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 3
+Epoch 26/300 |loss: 0.001017| train set 2.022x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 4
+Epoch 27/300 |loss: 0.001023| train set 2.017x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 5
+Epoch 28/300 |loss: 0.001066| train set 2.020x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 6
+Epoch 29/300 |loss: 0.001024| train set 1.994x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 7
+Epoch 30/300 |loss: 0.001035| train set 2.015x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 8
+Epoch 31/300 |loss: 0.001077| train set 2.019x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 9
+Epoch 32/300 |loss: 0.001134| train set 1.975x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 10
+Epoch 33/300 |loss: 0.001079| train set 2.018x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 11
+Epoch 34/300 |loss: 0.000984| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 12
+Epoch 35/300 |loss: 0.000992| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 13
+Epoch 36/300 |loss: 0.001089| train set 2.017x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 14
+Epoch 37/300 |loss: 0.001073| train set 1.972x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 15
+early stopping at epoch 37
+Training per epoch cost 0.730 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 91.784s, pg runtime 91.784s, speedup 1.000x
+02, opt runtime 29.763s, model runtime 91.648s, pg runtime 91.648s, speedup 1.000x
+03, opt runtime 30.267s, model runtime 100.885s, pg runtime 100.885s, speedup 1.000x
+04, opt runtime 29.286s, model runtime 92.131s, pg runtime 92.131s, speedup 1.000x
+05, opt runtime 29.269s, model runtime 91.296s, pg runtime 91.296s, speedup 1.000x
+06, opt runtime 29.502s, model runtime 112.305s, pg runtime 112.305s, speedup 1.000x
+07, opt runtime 27.886s, model runtime 97.629s, pg runtime 97.629s, speedup 1.000x
+08, opt runtime 30.705s, model runtime 89.698s, pg runtime 89.698s, speedup 1.000x
+09, opt runtime 27.651s, model runtime 91.255s, pg runtime 91.255s, speedup 1.000x
+10, opt runtime 33.637s, model runtime 90.618s, pg runtime 90.618s, speedup 1.000x
+11, opt runtime 53.298s, model runtime 139.919s, pg runtime 148.707s, speedup 1.063x
+12, opt runtime 48.784s, model runtime 140.509s, pg runtime 78.349s, speedup 0.558x
+13, opt runtime 53.440s, model runtime 136.731s, pg runtime 140.742s, speedup 1.029x
+14, opt runtime 47.812s, model runtime 139.115s, pg runtime 83.069s, speedup 0.597x
+15, opt runtime 47.518s, model runtime 133.905s, pg runtime 75.736s, speedup 0.566x
+16, opt runtime 48.067s, model runtime 135.202s, pg runtime 81.014s, speedup 0.599x
+17, opt runtime 47.738s, model runtime 135.818s, pg runtime 76.021s, speedup 0.560x
+18, opt runtime 47.804s, model runtime 136.805s, pg runtime 81.177s, speedup 0.593x
+19, opt runtime 49.511s, model runtime 157.094s, pg runtime 87.329s, speedup 0.556x
+20, opt runtime 51.276s, model runtime 134.457s, pg runtime 79.222s, speedup 0.589x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 21, train speedup 2.022, test speedup 1.178, val speedup 0.911
+best test speedup epoch: 0, train speedup 0.877, test speedup 4.292, val speedup 0.624
+best validation speedup epoch: 23, train speedup 1.972, test speedup 1.125, val speedup 1.000
+last model at epoch 37, train speedup 1.972, test speedup 1.125, val speedup 0.911
+execution cost 0:01:21.008828
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:00.994250, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.045551| train set 0.877x speedup, test set 4.292x speedup, val set 0.624x speedup, step: 1
+Epoch 1/300 |loss: 0.012594| train set 1.412x speedup, test set 1.532x speedup, val set 1.000x speedup, step: 1
+Epoch 2/300 |loss: 0.008346| train set 1.228x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 3/300 |loss: 0.006698| train set 1.645x speedup, test set 1.216x speedup, val set 1.000x speedup, step: 1
+Epoch 4/300 |loss: 0.005672| train set 1.574x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 5/300 |loss: 0.005109| train set 1.677x speedup, test set 1.538x speedup, val set 1.000x speedup, step: 1
+Epoch 6/300 |loss: 0.004773| train set 1.703x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 7/300 |loss: 0.004493| train set 1.685x speedup, test set 1.221x speedup, val set 1.000x speedup, step: 1
+Epoch 8/300 |loss: 0.003883| train set 1.922x speedup, test set 2.520x speedup, val set 1.000x speedup, step: 1
+Epoch 9/300 |loss: 0.003446| train set 1.945x speedup, test set 2.520x speedup, val set 1.000x speedup, step: 1
+Epoch 10/300 |loss: 0.003137| train set 1.931x speedup, test set 1.911x speedup, val set 0.911x speedup, step: 2
+Epoch 11/300 |loss: 0.002597| train set 1.903x speedup, test set 1.111x speedup, val set 1.000x speedup, step: 1
+Epoch 12/300 |loss: 0.002830| train set 1.922x speedup, test set 1.177x speedup, val set 0.911x speedup, step: 2
+Epoch 13/300 |loss: 0.002369| train set 1.667x speedup, test set 1.178x speedup, val set 1.000x speedup, step: 1
+Epoch 14/300 |loss: 0.001809| train set 2.022x speedup, test set 1.178x speedup, val set 1.000x speedup, step: 1
+Epoch 15/300 |loss: 0.001943| train set 1.940x speedup, test set 1.178x speedup, val set 0.934x speedup, step: 2
+Epoch 16/300 |loss: 0.002137| train set 1.956x speedup, test set 1.178x speedup, val set 1.000x speedup, step: 1
+Epoch 17/300 |loss: 0.001440| train set 2.020x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 2
+Epoch 18/300 |loss: 0.001224| train set 1.975x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 3
+Epoch 19/300 |loss: 0.001156| train set 1.973x speedup, test set 1.112x speedup, val set 0.911x speedup, step: 4
+Epoch 20/300 |loss: 0.001684| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 5
+Epoch 21/300 |loss: 0.001192| train set 2.021x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 6
+Epoch 22/300 |loss: 0.001044| train set 1.972x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 7
+Epoch 23/300 |loss: 0.001068| train set 1.974x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 8
+Epoch 24/300 |loss: 0.001173| train set 1.978x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 9
+Epoch 25/300 |loss: 0.000990| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 10
+Epoch 26/300 |loss: 0.001032| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 11
+Epoch 27/300 |loss: 0.001017| train set 2.017x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 12
+Epoch 28/300 |loss: 0.001006| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 13
+Epoch 29/300 |loss: 0.001024| train set 2.021x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 14
+Epoch 30/300 |loss: 0.001071| train set 2.015x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 15
+Epoch 31/300 |loss: 0.001109| train set 2.022x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 16
+early stopping at epoch 31
+Training per epoch cost 0.969 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 40.281s, pg runtime 91.784s, speedup 2.279x
+02, opt runtime 29.763s, model runtime 40.217s, pg runtime 91.648s, speedup 2.279x
+03, opt runtime 30.267s, model runtime 43.737s, pg runtime 100.885s, speedup 2.307x
+04, opt runtime 29.286s, model runtime 40.230s, pg runtime 92.131s, speedup 2.290x
+05, opt runtime 29.269s, model runtime 42.511s, pg runtime 91.296s, speedup 2.148x
+06, opt runtime 29.502s, model runtime 47.174s, pg runtime 112.305s, speedup 2.381x
+07, opt runtime 27.886s, model runtime 41.362s, pg runtime 97.629s, speedup 2.360x
+08, opt runtime 30.705s, model runtime 40.366s, pg runtime 89.698s, speedup 2.222x
+09, opt runtime 27.651s, model runtime 41.883s, pg runtime 91.255s, speedup 2.179x
+10, opt runtime 33.637s, model runtime 39.619s, pg runtime 90.618s, speedup 2.287x
+11, opt runtime 53.298s, model runtime 139.919s, pg runtime 148.707s, speedup 1.063x
+12, opt runtime 48.784s, model runtime 140.509s, pg runtime 78.349s, speedup 0.558x
+13, opt runtime 53.440s, model runtime 136.731s, pg runtime 140.742s, speedup 1.029x
+14, opt runtime 47.812s, model runtime 139.115s, pg runtime 83.069s, speedup 0.597x
+15, opt runtime 47.518s, model runtime 133.905s, pg runtime 75.736s, speedup 0.566x
+16, opt runtime 48.067s, model runtime 135.202s, pg runtime 81.014s, speedup 0.599x
+17, opt runtime 47.738s, model runtime 135.818s, pg runtime 76.021s, speedup 0.560x
+18, opt runtime 47.804s, model runtime 136.805s, pg runtime 81.177s, speedup 0.593x
+19, opt runtime 49.511s, model runtime 157.094s, pg runtime 87.329s, speedup 0.556x
+20, opt runtime 51.276s, model runtime 134.457s, pg runtime 79.222s, speedup 0.589x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 20, train speedup 2.022, test speedup 1.125, val speedup 0.911
+best test speedup epoch: 0, train speedup 0.877, test speedup 4.292, val speedup 0.624
+best validation speedup epoch: 16, train speedup 1.956, test speedup 1.178, val speedup 1.000
+last model at epoch 31, train speedup 2.022, test speedup 1.178, val speedup 0.911
+execution cost 0:01:24.447680
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:00.759035, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.045551| train set 0.877x speedup, test set 4.292x speedup, val set 0.624x speedup, step: 1
+Epoch 1/300 |loss: 0.012594| train set 1.412x speedup, test set 1.532x speedup, val set 1.000x speedup, step: 1
+Epoch 2/300 |loss: 0.008346| train set 1.228x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 3/300 |loss: 0.006697| train set 1.645x speedup, test set 1.152x speedup, val set 1.000x speedup, step: 1
+Epoch 4/300 |loss: 0.005691| train set 1.574x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 5/300 |loss: 0.005067| train set 1.677x speedup, test set 1.538x speedup, val set 1.000x speedup, step: 1
+Epoch 6/300 |loss: 0.004824| train set 1.685x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 7/300 |loss: 0.004574| train set 1.685x speedup, test set 1.221x speedup, val set 0.575x speedup, step: 2
+Epoch 8/300 |loss: 0.003774| train set 1.997x speedup, test set 2.520x speedup, val set 0.911x speedup, step: 3
+Epoch 9/300 |loss: 0.003354| train set 1.940x speedup, test set 1.177x speedup, val set 1.000x speedup, step: 1
+Epoch 10/300 |loss: 0.003093| train set 1.986x speedup, test set 1.165x speedup, val set 0.911x speedup, step: 2
+Epoch 11/300 |loss: 0.002557| train set 1.921x speedup, test set 1.112x speedup, val set 1.000x speedup, step: 1
+Epoch 12/300 |loss: 0.002721| train set 1.919x speedup, test set 1.111x speedup, val set 0.911x speedup, step: 2
+Epoch 13/300 |loss: 0.002246| train set 1.663x speedup, test set 1.112x speedup, val set 0.934x speedup, step: 3
+Epoch 14/300 |loss: 0.001777| train set 2.019x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 4
+Epoch 15/300 |loss: 0.001765| train set 2.016x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 5
+Epoch 16/300 |loss: 0.001657| train set 1.985x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 6
+Epoch 17/300 |loss: 0.001528| train set 2.017x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 7
+Epoch 18/300 |loss: 0.001339| train set 1.897x speedup, test set 1.125x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001136| train set 1.968x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 2
+Epoch 20/300 |loss: 0.001704| train set 1.997x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 3
+Epoch 21/300 |loss: 0.001178| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 4
+Epoch 22/300 |loss: 0.001059| train set 1.974x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 5
+Epoch 23/300 |loss: 0.001117| train set 1.976x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 6
+Epoch 24/300 |loss: 0.001512| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 7
+Epoch 25/300 |loss: 0.000996| train set 2.022x speedup, test set 1.132x speedup, val set 0.911x speedup, step: 8
+Epoch 26/300 |loss: 0.001042| train set 2.016x speedup, test set 1.178x speedup, val set 0.911x speedup, step: 9
+Epoch 27/300 |loss: 0.001039| train set 2.019x speedup, test set 1.147x speedup, val set 0.911x speedup, step: 10
+Epoch 28/300 |loss: 0.001026| train set 2.022x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 11
+Epoch 29/300 |loss: 0.001042| train set 1.994x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 12
+Epoch 30/300 |loss: 0.001107| train set 1.971x speedup, test set 1.125x speedup, val set 0.911x speedup, step: 13
+Epoch 31/300 |loss: 0.001270| train set 2.022x speedup, test set 1.137x speedup, val set 0.911x speedup, step: 14
+early stopping at epoch 31
+Training per epoch cost 0.770 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 91.784s, pg runtime 91.784s, speedup 1.000x
+02, opt runtime 29.763s, model runtime 91.648s, pg runtime 91.648s, speedup 1.000x
+03, opt runtime 30.267s, model runtime 100.885s, pg runtime 100.885s, speedup 1.000x
+04, opt runtime 29.286s, model runtime 92.131s, pg runtime 92.131s, speedup 1.000x
+05, opt runtime 29.269s, model runtime 91.296s, pg runtime 91.296s, speedup 1.000x
+06, opt runtime 29.502s, model runtime 112.305s, pg runtime 112.305s, speedup 1.000x
+07, opt runtime 27.886s, model runtime 97.629s, pg runtime 97.629s, speedup 1.000x
+08, opt runtime 30.705s, model runtime 89.698s, pg runtime 89.698s, speedup 1.000x
+09, opt runtime 27.651s, model runtime 91.255s, pg runtime 91.255s, speedup 1.000x
+10, opt runtime 33.637s, model runtime 90.618s, pg runtime 90.618s, speedup 1.000x
+11, opt runtime 53.298s, model runtime 139.919s, pg runtime 148.707s, speedup 1.063x
+12, opt runtime 48.784s, model runtime 140.509s, pg runtime 78.349s, speedup 0.558x
+13, opt runtime 53.440s, model runtime 136.731s, pg runtime 140.742s, speedup 1.029x
+14, opt runtime 47.812s, model runtime 139.115s, pg runtime 83.069s, speedup 0.597x
+15, opt runtime 47.518s, model runtime 133.905s, pg runtime 75.736s, speedup 0.566x
+16, opt runtime 48.067s, model runtime 135.202s, pg runtime 81.014s, speedup 0.599x
+17, opt runtime 47.738s, model runtime 135.818s, pg runtime 76.021s, speedup 0.560x
+18, opt runtime 47.804s, model runtime 136.805s, pg runtime 81.177s, speedup 0.593x
+19, opt runtime 49.511s, model runtime 157.094s, pg runtime 87.329s, speedup 0.556x
+20, opt runtime 51.276s, model runtime 134.457s, pg runtime 79.222s, speedup 0.589x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 28, train speedup 2.022, test speedup 1.125, val speedup 0.911
+best test speedup epoch: 0, train speedup 0.877, test speedup 4.292, val speedup 0.624
+best validation speedup epoch: 18, train speedup 1.897, test speedup 1.125, val speedup 1.000
+last model at epoch 31, train speedup 2.022, test speedup 1.137, val speedup 0.911
+execution cost 0:01:09.981337
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+test templates:  ['7', '28', '31', '16', '19', '17', '20']
+test queries:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+test query:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+load JOB succ
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:00.834101, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.046358| train set 0.788x speedup, test set 2.507x speedup, val set 0.691x speedup, step: 1
+Epoch 1/300 |loss: 0.012202| train set 1.340x speedup, test set 1.256x speedup, val set 0.348x speedup, step: 2
+Epoch 2/300 |loss: 0.007256| train set 1.432x speedup, test set 1.743x speedup, val set 0.501x speedup, step: 3
+Epoch 3/300 |loss: 0.006084| train set 1.451x speedup, test set 1.732x speedup, val set 0.348x speedup, step: 4
+Epoch 4/300 |loss: 0.005495| train set 1.537x speedup, test set 1.751x speedup, val set 0.501x speedup, step: 5
+Epoch 5/300 |loss: 0.004892| train set 1.530x speedup, test set 1.410x speedup, val set 0.501x speedup, step: 6
+Epoch 6/300 |loss: 0.004323| train set 1.444x speedup, test set 1.428x speedup, val set 0.501x speedup, step: 7
+Epoch 7/300 |loss: 0.004466| train set 1.548x speedup, test set 1.410x speedup, val set 0.822x speedup, step: 1
+Epoch 8/300 |loss: 0.003783| train set 1.764x speedup, test set 1.537x speedup, val set 0.822x speedup, step: 1
+Epoch 9/300 |loss: 0.002661| train set 1.786x speedup, test set 1.234x speedup, val set 0.450x speedup, step: 2
+Epoch 10/300 |loss: 0.002947| train set 1.790x speedup, test set 1.234x speedup, val set 0.450x speedup, step: 3
+Epoch 11/300 |loss: 0.002229| train set 1.791x speedup, test set 1.255x speedup, val set 0.477x speedup, step: 4
+Epoch 12/300 |loss: 0.002090| train set 1.730x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 13/300 |loss: 0.001635| train set 1.776x speedup, test set 1.405x speedup, val set 1.000x speedup, step: 1
+Epoch 14/300 |loss: 0.001293| train set 1.776x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 2
+Epoch 15/300 |loss: 0.001344| train set 1.791x speedup, test set 1.220x speedup, val set 0.477x speedup, step: 3
+Epoch 16/300 |loss: 0.001286| train set 1.810x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 17/300 |loss: 0.001139| train set 1.800x speedup, test set 1.227x speedup, val set 1.000x speedup, step: 1
+Epoch 18/300 |loss: 0.001780| train set 1.809x speedup, test set 1.423x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001146| train set 1.810x speedup, test set 1.654x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001052| train set 1.810x speedup, test set 1.641x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001100| train set 1.774x speedup, test set 1.641x speedup, val set 1.000x speedup, step: 1
+Epoch 22/300 |loss: 0.001261| train set 1.806x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 23/300 |loss: 0.001156| train set 1.810x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 24/300 |loss: 0.001077| train set 1.809x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 25/300 |loss: 0.001219| train set 1.775x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 26/300 |loss: 0.001070| train set 1.808x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 27/300 |loss: 0.001033| train set 1.774x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 28/300 |loss: 0.001272| train set 1.810x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 29/300 |loss: 0.001174| train set 1.806x speedup, test set 1.220x speedup, val set 1.000x speedup, step: 1
+early stopping at epoch 29
+Training per epoch cost 0.497 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 40.281s, pg runtime 91.784s, speedup 2.279x
+02, opt runtime 29.763s, model runtime 40.217s, pg runtime 91.648s, speedup 2.279x
+03, opt runtime 30.267s, model runtime 43.737s, pg runtime 100.885s, speedup 2.307x
+04, opt runtime 29.286s, model runtime 40.230s, pg runtime 92.131s, speedup 2.290x
+05, opt runtime 29.269s, model runtime 42.511s, pg runtime 91.296s, speedup 2.148x
+06, opt runtime 29.502s, model runtime 47.174s, pg runtime 112.305s, speedup 2.381x
+07, opt runtime 27.886s, model runtime 41.362s, pg runtime 97.629s, speedup 2.360x
+08, opt runtime 30.705s, model runtime 40.366s, pg runtime 89.698s, speedup 2.222x
+09, opt runtime 27.651s, model runtime 41.883s, pg runtime 91.255s, speedup 2.179x
+10, opt runtime 33.637s, model runtime 39.619s, pg runtime 90.618s, speedup 2.287x
+11, opt runtime 53.298s, model runtime 152.039s, pg runtime 148.707s, speedup 0.978x
+12, opt runtime 48.784s, model runtime 85.611s, pg runtime 78.349s, speedup 0.915x
+13, opt runtime 53.440s, model runtime 154.450s, pg runtime 140.742s, speedup 0.911x
+14, opt runtime 47.812s, model runtime 88.819s, pg runtime 83.069s, speedup 0.935x
+15, opt runtime 47.518s, model runtime 83.137s, pg runtime 75.736s, speedup 0.911x
+16, opt runtime 48.067s, model runtime 87.942s, pg runtime 81.014s, speedup 0.921x
+17, opt runtime 47.738s, model runtime 83.106s, pg runtime 76.021s, speedup 0.915x
+18, opt runtime 47.804s, model runtime 87.416s, pg runtime 81.177s, speedup 0.929x
+19, opt runtime 49.511s, model runtime 92.597s, pg runtime 87.329s, speedup 0.943x
+20, opt runtime 51.276s, model runtime 84.921s, pg runtime 79.222s, speedup 0.933x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 19, train speedup 1.810, test speedup 1.654, val speedup 1.000
+best test speedup epoch: 0, train speedup 0.788, test speedup 2.507, val speedup 0.691
+best validation speedup epoch: 29, train speedup 1.806, test speedup 1.220, val speedup 1.000
+last model at epoch 29, train speedup 1.806, test speedup 1.220, val speedup 1.000
+execution cost 0:00:33.904335
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+test templates:  ['7', '28', '31', '16', '19', '17', '20']
+test queries:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+test query:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+load JOB succ
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:00.884527, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.046358| train set 0.788x speedup, test set 2.507x speedup, val set 0.691x speedup, step: 1
+Epoch 1/300 |loss: 0.012202| train set 1.340x speedup, test set 1.256x speedup, val set 0.348x speedup, step: 2
+Epoch 2/300 |loss: 0.007256| train set 1.432x speedup, test set 1.743x speedup, val set 0.501x speedup, step: 3
+Epoch 3/300 |loss: 0.006084| train set 1.451x speedup, test set 1.732x speedup, val set 0.348x speedup, step: 4
+Epoch 4/300 |loss: 0.005507| train set 1.537x speedup, test set 1.760x speedup, val set 0.501x speedup, step: 5
+Epoch 5/300 |loss: 0.004883| train set 1.530x speedup, test set 1.410x speedup, val set 0.501x speedup, step: 6
+Epoch 6/300 |loss: 0.004314| train set 1.444x speedup, test set 1.550x speedup, val set 0.501x speedup, step: 7
+Epoch 7/300 |loss: 0.004279| train set 1.547x speedup, test set 1.537x speedup, val set 0.822x speedup, step: 1
+Epoch 8/300 |loss: 0.003609| train set 1.548x speedup, test set 1.546x speedup, val set 0.822x speedup, step: 1
+Epoch 9/300 |loss: 0.002663| train set 1.790x speedup, test set 1.162x speedup, val set 0.450x speedup, step: 2
+Epoch 10/300 |loss: 0.003014| train set 1.786x speedup, test set 1.234x speedup, val set 0.450x speedup, step: 3
+Epoch 11/300 |loss: 0.002289| train set 1.805x speedup, test set 1.270x speedup, val set 0.477x speedup, step: 4
+Epoch 12/300 |loss: 0.002170| train set 1.732x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 13/300 |loss: 0.001807| train set 1.810x speedup, test set 1.537x speedup, val set 0.477x speedup, step: 2
+Epoch 14/300 |loss: 0.001496| train set 1.775x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 15/300 |loss: 0.001764| train set 1.791x speedup, test set 1.234x speedup, val set 0.450x speedup, step: 2
+Epoch 16/300 |loss: 0.001957| train set 1.549x speedup, test set 1.147x speedup, val set 0.695x speedup, step: 3
+Epoch 17/300 |loss: 0.001844| train set 1.810x speedup, test set 1.234x speedup, val set 0.477x speedup, step: 4
+Epoch 18/300 |loss: 0.001400| train set 1.810x speedup, test set 1.156x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001086| train set 1.810x speedup, test set 1.234x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001015| train set 1.810x speedup, test set 1.220x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001060| train set 1.790x speedup, test set 1.234x speedup, val set 1.000x speedup, step: 1
+Epoch 22/300 |loss: 0.001052| train set 1.807x speedup, test set 1.156x speedup, val set 1.000x speedup, step: 1
+Epoch 23/300 |loss: 0.001098| train set 1.775x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 24/300 |loss: 0.001049| train set 1.809x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 25/300 |loss: 0.001172| train set 1.772x speedup, test set 1.220x speedup, val set 1.000x speedup, step: 1
+Epoch 26/300 |loss: 0.001035| train set 1.809x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 27/300 |loss: 0.001037| train set 1.775x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 28/300 |loss: 0.001239| train set 1.807x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 29/300 |loss: 0.001157| train set 1.807x speedup, test set 1.234x speedup, val set 1.000x speedup, step: 1
+early stopping at epoch 29
+Training per epoch cost 0.504 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 40.281s, pg runtime 91.784s, speedup 2.279x
+02, opt runtime 29.763s, model runtime 40.217s, pg runtime 91.648s, speedup 2.279x
+03, opt runtime 30.267s, model runtime 43.737s, pg runtime 100.885s, speedup 2.307x
+04, opt runtime 29.286s, model runtime 40.230s, pg runtime 92.131s, speedup 2.290x
+05, opt runtime 29.269s, model runtime 42.511s, pg runtime 91.296s, speedup 2.148x
+06, opt runtime 29.502s, model runtime 47.174s, pg runtime 112.305s, speedup 2.381x
+07, opt runtime 27.886s, model runtime 41.362s, pg runtime 97.629s, speedup 2.360x
+08, opt runtime 30.705s, model runtime 40.366s, pg runtime 89.698s, speedup 2.222x
+09, opt runtime 27.651s, model runtime 41.883s, pg runtime 91.255s, speedup 2.179x
+10, opt runtime 33.637s, model runtime 39.619s, pg runtime 90.618s, speedup 2.287x
+11, opt runtime 53.298s, model runtime 91.571s, pg runtime 148.707s, speedup 1.624x
+12, opt runtime 48.784s, model runtime 85.611s, pg runtime 78.349s, speedup 0.915x
+13, opt runtime 53.440s, model runtime 86.638s, pg runtime 140.742s, speedup 1.624x
+14, opt runtime 47.812s, model runtime 88.819s, pg runtime 83.069s, speedup 0.935x
+15, opt runtime 47.518s, model runtime 83.137s, pg runtime 75.736s, speedup 0.911x
+16, opt runtime 48.067s, model runtime 87.942s, pg runtime 81.014s, speedup 0.921x
+17, opt runtime 47.738s, model runtime 83.106s, pg runtime 76.021s, speedup 0.915x
+18, opt runtime 47.804s, model runtime 87.416s, pg runtime 81.177s, speedup 0.929x
+19, opt runtime 49.511s, model runtime 92.597s, pg runtime 87.329s, speedup 0.943x
+20, opt runtime 51.276s, model runtime 84.921s, pg runtime 79.222s, speedup 0.933x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 17, train speedup 1.810, test speedup 1.234, val speedup 0.477
+best test speedup epoch: 0, train speedup 0.788, test speedup 2.507, val speedup 0.691
+best validation speedup epoch: 29, train speedup 1.807, test speedup 1.234, val speedup 1.000
+last model at epoch 29, train speedup 1.807, test speedup 1.234, val speedup 1.000
+execution cost 0:00:33.700166
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+test templates:  ['7', '28', '31', '16', '19', '17', '20']
+test queries:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+test query:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+load JOB succ
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:00.844105, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.046358| train set 0.788x speedup, test set 2.507x speedup, val set 0.691x speedup, step: 1
+Epoch 1/300 |loss: 0.012202| train set 1.340x speedup, test set 1.256x speedup, val set 0.348x speedup, step: 2
+Epoch 2/300 |loss: 0.007253| train set 1.433x speedup, test set 1.765x speedup, val set 0.501x speedup, step: 3
+Epoch 3/300 |loss: 0.006105| train set 1.450x speedup, test set 2.752x speedup, val set 0.348x speedup, step: 4
+Epoch 4/300 |loss: 0.005513| train set 1.512x speedup, test set 1.760x speedup, val set 0.501x speedup, step: 5
+Epoch 5/300 |loss: 0.005166| train set 1.530x speedup, test set 1.410x speedup, val set 0.501x speedup, step: 6
+Epoch 6/300 |loss: 0.004095| train set 1.466x speedup, test set 1.575x speedup, val set 0.501x speedup, step: 7
+Epoch 7/300 |loss: 0.004302| train set 1.547x speedup, test set 1.423x speedup, val set 0.822x speedup, step: 1
+Epoch 8/300 |loss: 0.003747| train set 1.551x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 9/300 |loss: 0.002566| train set 1.790x speedup, test set 1.537x speedup, val set 0.477x speedup, step: 2
+Epoch 10/300 |loss: 0.002664| train set 1.805x speedup, test set 1.537x speedup, val set 0.477x speedup, step: 3
+Epoch 11/300 |loss: 0.002357| train set 1.806x speedup, test set 1.193x speedup, val set 0.477x speedup, step: 4
+Epoch 12/300 |loss: 0.002173| train set 1.731x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 13/300 |loss: 0.001567| train set 1.810x speedup, test set 1.405x speedup, val set 0.477x speedup, step: 2
+Epoch 14/300 |loss: 0.001256| train set 1.776x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 15/300 |loss: 0.001685| train set 1.810x speedup, test set 1.405x speedup, val set 0.477x speedup, step: 2
+Epoch 16/300 |loss: 0.001734| train set 1.791x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 17/300 |loss: 0.001189| train set 1.802x speedup, test set 1.515x speedup, val set 1.000x speedup, step: 1
+Epoch 18/300 |loss: 0.001355| train set 1.775x speedup, test set 1.405x speedup, val set 0.861x speedup, step: 2
+Epoch 19/300 |loss: 0.001229| train set 1.806x speedup, test set 1.405x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001043| train set 1.810x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001056| train set 1.809x speedup, test set 1.515x speedup, val set 1.000x speedup, step: 1
+Epoch 22/300 |loss: 0.001101| train set 1.806x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 23/300 |loss: 0.001103| train set 1.810x speedup, test set 1.405x speedup, val set 1.000x speedup, step: 1
+Epoch 24/300 |loss: 0.001092| train set 1.775x speedup, test set 1.405x speedup, val set 1.000x speedup, step: 1
+Epoch 25/300 |loss: 0.001200| train set 1.773x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 26/300 |loss: 0.001059| train set 1.811x speedup, test set 1.405x speedup, val set 1.000x speedup, step: 1
+Epoch 27/300 |loss: 0.001026| train set 1.774x speedup, test set 1.405x speedup, val set 1.000x speedup, step: 1
+Epoch 28/300 |loss: 0.001190| train set 1.810x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 29/300 |loss: 0.001062| train set 1.805x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+early stopping at epoch 29
+Training per epoch cost 0.498 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 40.281s, pg runtime 91.784s, speedup 2.279x
+02, opt runtime 29.763s, model runtime 40.217s, pg runtime 91.648s, speedup 2.279x
+03, opt runtime 30.267s, model runtime 43.737s, pg runtime 100.885s, speedup 2.307x
+04, opt runtime 29.286s, model runtime 40.230s, pg runtime 92.131s, speedup 2.290x
+05, opt runtime 29.269s, model runtime 42.511s, pg runtime 91.296s, speedup 2.148x
+06, opt runtime 29.502s, model runtime 47.174s, pg runtime 112.305s, speedup 2.381x
+07, opt runtime 27.886s, model runtime 41.362s, pg runtime 97.629s, speedup 2.360x
+08, opt runtime 30.705s, model runtime 40.366s, pg runtime 89.698s, speedup 2.222x
+09, opt runtime 27.651s, model runtime 41.883s, pg runtime 91.255s, speedup 2.179x
+10, opt runtime 33.637s, model runtime 39.619s, pg runtime 90.618s, speedup 2.287x
+11, opt runtime 53.298s, model runtime 152.039s, pg runtime 148.707s, speedup 0.978x
+12, opt runtime 48.784s, model runtime 177.310s, pg runtime 78.349s, speedup 0.442x
+13, opt runtime 53.440s, model runtime 154.450s, pg runtime 140.742s, speedup 0.911x
+14, opt runtime 47.812s, model runtime 171.862s, pg runtime 83.069s, speedup 0.483x
+15, opt runtime 47.518s, model runtime 171.388s, pg runtime 75.736s, speedup 0.442x
+16, opt runtime 48.067s, model runtime 170.211s, pg runtime 81.014s, speedup 0.476x
+17, opt runtime 47.738s, model runtime 170.931s, pg runtime 76.021s, speedup 0.445x
+18, opt runtime 47.804s, model runtime 170.185s, pg runtime 81.177s, speedup 0.477x
+19, opt runtime 49.511s, model runtime 188.090s, pg runtime 87.329s, speedup 0.464x
+20, opt runtime 51.276s, model runtime 170.376s, pg runtime 79.222s, speedup 0.465x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 26, train speedup 1.811, test speedup 1.405, val speedup 1.000
+best test speedup epoch: 3, train speedup 1.450, test speedup 2.752, val speedup 0.348
+best validation speedup epoch: 29, train speedup 1.805, test speedup 1.147, val speedup 1.000
+last model at epoch 29, train speedup 1.805, test speedup 1.147, val speedup 1.000
+execution cost 0:00:34.564645
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+test templates:  ['7', '28', '31', '16', '19', '17', '20']
+test queries:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+test query:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+load JOB succ
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:00.921597, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.046358| train set 0.788x speedup, test set 2.507x speedup, val set 0.691x speedup, step: 1
+Epoch 1/300 |loss: 0.012202| train set 1.340x speedup, test set 1.256x speedup, val set 0.348x speedup, step: 2
+Epoch 2/300 |loss: 0.007256| train set 1.432x speedup, test set 1.743x speedup, val set 0.501x speedup, step: 3
+Epoch 3/300 |loss: 0.006086| train set 1.451x speedup, test set 1.732x speedup, val set 0.348x speedup, step: 4
+Epoch 4/300 |loss: 0.005517| train set 1.527x speedup, test set 1.927x speedup, val set 0.501x speedup, step: 5
+Epoch 5/300 |loss: 0.004823| train set 1.530x speedup, test set 1.410x speedup, val set 0.501x speedup, step: 6
+Epoch 6/300 |loss: 0.004292| train set 1.466x speedup, test set 1.552x speedup, val set 0.501x speedup, step: 7
+Epoch 7/300 |loss: 0.004382| train set 1.548x speedup, test set 1.410x speedup, val set 0.822x speedup, step: 1
+Epoch 8/300 |loss: 0.003777| train set 1.765x speedup, test set 1.546x speedup, val set 0.822x speedup, step: 1
+Epoch 9/300 |loss: 0.002657| train set 1.788x speedup, test set 1.546x speedup, val set 0.477x speedup, step: 2
+Epoch 10/300 |loss: 0.002899| train set 1.810x speedup, test set 1.603x speedup, val set 0.477x speedup, step: 3
+Epoch 11/300 |loss: 0.002279| train set 1.810x speedup, test set 1.255x speedup, val set 0.477x speedup, step: 4
+Epoch 12/300 |loss: 0.002192| train set 1.733x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 13/300 |loss: 0.001764| train set 1.810x speedup, test set 1.234x speedup, val set 0.895x speedup, step: 1
+Epoch 14/300 |loss: 0.001432| train set 1.776x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 15/300 |loss: 0.001777| train set 1.791x speedup, test set 1.234x speedup, val set 1.000x speedup, step: 1
+Epoch 16/300 |loss: 0.002523| train set 1.519x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 17/300 |loss: 0.002354| train set 1.765x speedup, test set 1.234x speedup, val set 1.000x speedup, step: 1
+Epoch 18/300 |loss: 0.001239| train set 1.810x speedup, test set 1.234x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001028| train set 1.810x speedup, test set 1.164x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001017| train set 1.810x speedup, test set 1.181x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001022| train set 1.810x speedup, test set 1.220x speedup, val set 1.000x speedup, step: 1
+Epoch 22/300 |loss: 0.001037| train set 1.804x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 23/300 |loss: 0.001082| train set 1.810x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 24/300 |loss: 0.001047| train set 1.809x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 25/300 |loss: 0.001110| train set 1.773x speedup, test set 1.164x speedup, val set 1.000x speedup, step: 1
+Epoch 26/300 |loss: 0.001053| train set 1.775x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 27/300 |loss: 0.001038| train set 1.773x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 28/300 |loss: 0.001116| train set 1.809x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+early stopping at epoch 28
+Training per epoch cost 0.503 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 40.281s, pg runtime 91.784s, speedup 2.279x
+02, opt runtime 29.763s, model runtime 40.217s, pg runtime 91.648s, speedup 2.279x
+03, opt runtime 30.267s, model runtime 43.737s, pg runtime 100.885s, speedup 2.307x
+04, opt runtime 29.286s, model runtime 40.230s, pg runtime 92.131s, speedup 2.290x
+05, opt runtime 29.269s, model runtime 42.511s, pg runtime 91.296s, speedup 2.148x
+06, opt runtime 29.502s, model runtime 47.174s, pg runtime 112.305s, speedup 2.381x
+07, opt runtime 27.886s, model runtime 41.362s, pg runtime 97.629s, speedup 2.360x
+08, opt runtime 30.705s, model runtime 40.366s, pg runtime 89.698s, speedup 2.222x
+09, opt runtime 27.651s, model runtime 41.883s, pg runtime 91.255s, speedup 2.179x
+10, opt runtime 33.637s, model runtime 39.619s, pg runtime 90.618s, speedup 2.287x
+11, opt runtime 53.298s, model runtime 152.039s, pg runtime 148.707s, speedup 0.978x
+12, opt runtime 48.784s, model runtime 177.310s, pg runtime 78.349s, speedup 0.442x
+13, opt runtime 53.440s, model runtime 154.450s, pg runtime 140.742s, speedup 0.911x
+14, opt runtime 47.812s, model runtime 171.862s, pg runtime 83.069s, speedup 0.483x
+15, opt runtime 47.518s, model runtime 171.388s, pg runtime 75.736s, speedup 0.442x
+16, opt runtime 48.067s, model runtime 170.211s, pg runtime 81.014s, speedup 0.476x
+17, opt runtime 47.738s, model runtime 170.931s, pg runtime 76.021s, speedup 0.445x
+18, opt runtime 47.804s, model runtime 170.185s, pg runtime 81.177s, speedup 0.477x
+19, opt runtime 49.511s, model runtime 188.090s, pg runtime 87.329s, speedup 0.464x
+20, opt runtime 51.276s, model runtime 170.376s, pg runtime 79.222s, speedup 0.465x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 19, train speedup 1.810, test speedup 1.164, val speedup 1.000
+best test speedup epoch: 0, train speedup 0.788, test speedup 2.507, val speedup 0.691
+best validation speedup epoch: 28, train speedup 1.809, test speedup 1.147, val speedup 1.000
+last model at epoch 28, train speedup 1.809, test speedup 1.147, val speedup 1.000
+execution cost 0:00:34.731440
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+test templates:  ['7', '28', '31', '16', '19', '17', '20']
+test queries:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+test query:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+load JOB succ
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:00.879937, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.046358| train set 0.788x speedup, test set 2.507x speedup, val set 0.691x speedup, step: 1
+Epoch 1/300 |loss: 0.012202| train set 1.340x speedup, test set 1.256x speedup, val set 0.348x speedup, step: 2
+Epoch 2/300 |loss: 0.007253| train set 1.433x speedup, test set 1.765x speedup, val set 0.501x speedup, step: 3
+Epoch 3/300 |loss: 0.006105| train set 1.450x speedup, test set 2.752x speedup, val set 0.348x speedup, step: 4
+Epoch 4/300 |loss: 0.005511| train set 1.537x speedup, test set 1.760x speedup, val set 0.501x speedup, step: 5
+Epoch 5/300 |loss: 0.005146| train set 1.530x speedup, test set 1.405x speedup, val set 0.501x speedup, step: 6
+Epoch 6/300 |loss: 0.004144| train set 1.444x speedup, test set 1.698x speedup, val set 0.501x speedup, step: 7
+Epoch 7/300 |loss: 0.004429| train set 1.551x speedup, test set 1.569x speedup, val set 0.822x speedup, step: 1
+Epoch 8/300 |loss: 0.003851| train set 1.551x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 9/300 |loss: 0.002648| train set 1.790x speedup, test set 2.773x speedup, val set 0.477x speedup, step: 2
+Epoch 10/300 |loss: 0.002625| train set 1.799x speedup, test set 1.669x speedup, val set 0.477x speedup, step: 3
+Epoch 11/300 |loss: 0.002381| train set 1.810x speedup, test set 1.443x speedup, val set 0.477x speedup, step: 4
+Epoch 12/300 |loss: 0.002148| train set 1.727x speedup, test set 1.405x speedup, val set 0.744x speedup, step: 5
+Epoch 13/300 |loss: 0.001724| train set 1.810x speedup, test set 1.403x speedup, val set 1.000x speedup, step: 1
+Epoch 14/300 |loss: 0.001311| train set 1.776x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 2
+Epoch 15/300 |loss: 0.001542| train set 1.791x speedup, test set 1.147x speedup, val set 0.343x speedup, step: 3
+Epoch 16/300 |loss: 0.001718| train set 1.807x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 17/300 |loss: 0.001240| train set 1.723x speedup, test set 1.220x speedup, val set 1.000x speedup, step: 1
+Epoch 18/300 |loss: 0.001585| train set 1.809x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001077| train set 1.810x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001063| train set 1.808x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001057| train set 1.810x speedup, test set 1.510x speedup, val set 1.000x speedup, step: 1
+Epoch 22/300 |loss: 0.001060| train set 1.802x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 23/300 |loss: 0.001087| train set 1.809x speedup, test set 2.222x speedup, val set 1.000x speedup, step: 1
+Epoch 24/300 |loss: 0.001051| train set 1.775x speedup, test set 1.084x speedup, val set 1.000x speedup, step: 1
+Epoch 25/300 |loss: 0.001208| train set 1.772x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 26/300 |loss: 0.001096| train set 1.809x speedup, test set 1.132x speedup, val set 0.822x speedup, step: 2
+Epoch 27/300 |loss: 0.001041| train set 1.774x speedup, test set 1.510x speedup, val set 1.000x speedup, step: 1
+Epoch 28/300 |loss: 0.001253| train set 1.773x speedup, test set 1.147x speedup, val set 0.955x speedup, step: 2
+Epoch 29/300 |loss: 0.001136| train set 1.806x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+early stopping at epoch 29
+Training per epoch cost 0.515 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 40.281s, pg runtime 91.784s, speedup 2.279x
+02, opt runtime 29.763s, model runtime 40.217s, pg runtime 91.648s, speedup 2.279x
+03, opt runtime 30.267s, model runtime 43.737s, pg runtime 100.885s, speedup 2.307x
+04, opt runtime 29.286s, model runtime 40.230s, pg runtime 92.131s, speedup 2.290x
+05, opt runtime 29.269s, model runtime 42.511s, pg runtime 91.296s, speedup 2.148x
+06, opt runtime 29.502s, model runtime 47.174s, pg runtime 112.305s, speedup 2.381x
+07, opt runtime 27.886s, model runtime 41.362s, pg runtime 97.629s, speedup 2.360x
+08, opt runtime 30.705s, model runtime 40.366s, pg runtime 89.698s, speedup 2.222x
+09, opt runtime 27.651s, model runtime 41.883s, pg runtime 91.255s, speedup 2.179x
+10, opt runtime 33.637s, model runtime 39.619s, pg runtime 90.618s, speedup 2.287x
+11, opt runtime 53.298s, model runtime 152.039s, pg runtime 148.707s, speedup 0.978x
+12, opt runtime 48.784s, model runtime 177.310s, pg runtime 78.349s, speedup 0.442x
+13, opt runtime 53.440s, model runtime 154.450s, pg runtime 140.742s, speedup 0.911x
+14, opt runtime 47.812s, model runtime 171.862s, pg runtime 83.069s, speedup 0.483x
+15, opt runtime 47.518s, model runtime 171.388s, pg runtime 75.736s, speedup 0.442x
+16, opt runtime 48.067s, model runtime 170.211s, pg runtime 81.014s, speedup 0.476x
+17, opt runtime 47.738s, model runtime 170.931s, pg runtime 76.021s, speedup 0.445x
+18, opt runtime 47.804s, model runtime 170.185s, pg runtime 81.177s, speedup 0.477x
+19, opt runtime 49.511s, model runtime 188.090s, pg runtime 87.329s, speedup 0.464x
+20, opt runtime 51.276s, model runtime 170.376s, pg runtime 79.222s, speedup 0.465x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 21, train speedup 1.810, test speedup 1.510, val speedup 1.000
+best test speedup epoch: 9, train speedup 1.790, test speedup 2.773, val speedup 0.477
+best validation speedup epoch: 29, train speedup 1.806, test speedup 1.147, val speedup 1.000
+last model at epoch 29, train speedup 1.806, test speedup 1.147, val speedup 1.000
+execution cost 0:00:35.244183
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+test templates:  ['7', '28', '31', '16', '19', '17', '20']
+test queries:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+test query:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+load JOB succ
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:01.055388, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.046358| train set 0.788x speedup, test set 2.507x speedup, val set 0.691x speedup, step: 1
+Epoch 1/300 |loss: 0.012202| train set 1.340x speedup, test set 1.256x speedup, val set 0.348x speedup, step: 2
+Epoch 2/300 |loss: 0.007256| train set 1.432x speedup, test set 1.743x speedup, val set 0.501x speedup, step: 3
+Epoch 3/300 |loss: 0.006084| train set 1.451x speedup, test set 1.732x speedup, val set 0.348x speedup, step: 4
+Epoch 4/300 |loss: 0.005498| train set 1.512x speedup, test set 1.760x speedup, val set 0.501x speedup, step: 5
+Epoch 5/300 |loss: 0.004884| train set 1.530x speedup, test set 1.410x speedup, val set 0.501x speedup, step: 6
+Epoch 6/300 |loss: 0.004332| train set 1.444x speedup, test set 1.446x speedup, val set 0.501x speedup, step: 7
+Epoch 7/300 |loss: 0.004288| train set 1.548x speedup, test set 1.537x speedup, val set 0.822x speedup, step: 1
+Epoch 8/300 |loss: 0.003678| train set 1.551x speedup, test set 1.537x speedup, val set 0.822x speedup, step: 1
+Epoch 9/300 |loss: 0.002726| train set 1.786x speedup, test set 1.546x speedup, val set 0.343x speedup, step: 2
+Epoch 10/300 |loss: 0.002830| train set 1.790x speedup, test set 1.162x speedup, val set 0.450x speedup, step: 3
+Epoch 11/300 |loss: 0.002262| train set 1.786x speedup, test set 1.162x speedup, val set 0.477x speedup, step: 4
+Epoch 12/300 |loss: 0.002104| train set 1.733x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 13/300 |loss: 0.001650| train set 1.763x speedup, test set 1.515x speedup, val set 0.477x speedup, step: 2
+Epoch 14/300 |loss: 0.001316| train set 1.776x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 15/300 |loss: 0.001637| train set 1.791x speedup, test set 1.234x speedup, val set 0.477x speedup, step: 2
+Epoch 16/300 |loss: 0.002300| train set 1.749x speedup, test set 1.512x speedup, val set 0.955x speedup, step: 1
+Epoch 17/300 |loss: 0.001553| train set 1.746x speedup, test set 1.234x speedup, val set 0.477x speedup, step: 2
+Epoch 18/300 |loss: 0.001427| train set 1.810x speedup, test set 1.220x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001087| train set 1.810x speedup, test set 1.234x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001021| train set 1.810x speedup, test set 1.191x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001048| train set 1.810x speedup, test set 1.234x speedup, val set 1.000x speedup, step: 1
+Epoch 22/300 |loss: 0.001139| train set 1.806x speedup, test set 1.220x speedup, val set 1.000x speedup, step: 1
+Epoch 23/300 |loss: 0.001107| train set 1.810x speedup, test set 1.234x speedup, val set 1.000x speedup, step: 1
+Epoch 24/300 |loss: 0.001067| train set 1.809x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 25/300 |loss: 0.001180| train set 1.810x speedup, test set 1.156x speedup, val set 1.000x speedup, step: 1
+Epoch 26/300 |loss: 0.001034| train set 1.809x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 27/300 |loss: 0.001020| train set 1.773x speedup, test set 1.164x speedup, val set 1.000x speedup, step: 1
+Epoch 28/300 |loss: 0.001314| train set 1.746x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 29/300 |loss: 0.001191| train set 1.810x speedup, test set 1.942x speedup, val set 1.000x speedup, step: 1
+early stopping at epoch 29
+Training per epoch cost 0.518 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 40.281s, pg runtime 91.784s, speedup 2.279x
+02, opt runtime 29.763s, model runtime 40.217s, pg runtime 91.648s, speedup 2.279x
+03, opt runtime 30.267s, model runtime 43.737s, pg runtime 100.885s, speedup 2.307x
+04, opt runtime 29.286s, model runtime 40.230s, pg runtime 92.131s, speedup 2.290x
+05, opt runtime 29.269s, model runtime 42.511s, pg runtime 91.296s, speedup 2.148x
+06, opt runtime 29.502s, model runtime 47.174s, pg runtime 112.305s, speedup 2.381x
+07, opt runtime 27.886s, model runtime 41.362s, pg runtime 97.629s, speedup 2.360x
+08, opt runtime 30.705s, model runtime 40.366s, pg runtime 89.698s, speedup 2.222x
+09, opt runtime 27.651s, model runtime 41.883s, pg runtime 91.255s, speedup 2.179x
+10, opt runtime 33.637s, model runtime 39.619s, pg runtime 90.618s, speedup 2.287x
+11, opt runtime 53.298s, model runtime 91.571s, pg runtime 148.707s, speedup 1.624x
+12, opt runtime 48.784s, model runtime 85.611s, pg runtime 78.349s, speedup 0.915x
+13, opt runtime 53.440s, model runtime 86.638s, pg runtime 140.742s, speedup 1.624x
+14, opt runtime 47.812s, model runtime 88.819s, pg runtime 83.069s, speedup 0.935x
+15, opt runtime 47.518s, model runtime 83.137s, pg runtime 75.736s, speedup 0.911x
+16, opt runtime 48.067s, model runtime 87.942s, pg runtime 81.014s, speedup 0.921x
+17, opt runtime 47.738s, model runtime 83.106s, pg runtime 76.021s, speedup 0.915x
+18, opt runtime 47.804s, model runtime 87.416s, pg runtime 81.177s, speedup 0.929x
+19, opt runtime 49.511s, model runtime 92.597s, pg runtime 87.329s, speedup 0.943x
+20, opt runtime 51.276s, model runtime 84.921s, pg runtime 79.222s, speedup 0.933x
+21, opt runtime 24.391s, model runtime 35.457s, pg runtime 601.866s, speedup 16.975x
+22, opt runtime 24.079s, model runtime 42.549s, pg runtime 608.707s, speedup 14.306x
+23, opt runtime 24.662s, model runtime 38.046s, pg runtime 613.999s, speedup 16.138x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 38.025s, pg runtime 601.756s, speedup 15.825x
+26, opt runtime 25.363s, model runtime 39.865s, pg runtime 611.327s, speedup 15.335x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 38.121s, pg runtime 612.430s, speedup 16.065x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 41.372s, pg runtime 610.993s, speedup 14.768x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 18, train speedup 1.810, test speedup 1.220, val speedup 1.000
+best test speedup epoch: 0, train speedup 0.788, test speedup 2.507, val speedup 0.691
+best validation speedup epoch: 29, train speedup 1.810, test speedup 1.942, val speedup 1.000
+last model at epoch 29, train speedup 1.810, test speedup 1.942, val speedup 1.000
+execution cost 0:00:35.766368
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+test templates:  ['7', '28', '31', '16', '19', '17', '20']
+test queries:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+test query:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+load JOB succ
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:01.061408, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.046358| train set 0.788x speedup, test set 2.507x speedup, val set 0.691x speedup, step: 1
+Epoch 1/300 |loss: 0.012197| train set 1.340x speedup, test set 1.256x speedup, val set 0.348x speedup, step: 2
+Epoch 2/300 |loss: 0.007283| train set 1.436x speedup, test set 1.260x speedup, val set 0.501x speedup, step: 3
+Epoch 3/300 |loss: 0.006062| train set 1.429x speedup, test set 1.734x speedup, val set 0.501x speedup, step: 4
+Epoch 4/300 |loss: 0.005559| train set 1.515x speedup, test set 1.726x speedup, val set 0.501x speedup, step: 5
+Epoch 5/300 |loss: 0.005368| train set 1.530x speedup, test set 1.410x speedup, val set 0.501x speedup, step: 6
+Epoch 6/300 |loss: 0.004087| train set 1.466x speedup, test set 1.756x speedup, val set 0.501x speedup, step: 7
+Epoch 7/300 |loss: 0.004405| train set 1.551x speedup, test set 1.410x speedup, val set 0.822x speedup, step: 1
+Epoch 8/300 |loss: 0.003919| train set 1.539x speedup, test set 1.512x speedup, val set 0.822x speedup, step: 1
+Epoch 9/300 |loss: 0.002780| train set 1.790x speedup, test set 1.234x speedup, val set 0.477x speedup, step: 2
+Epoch 10/300 |loss: 0.002757| train set 1.807x speedup, test set 1.664x speedup, val set 0.450x speedup, step: 3
+Epoch 11/300 |loss: 0.002445| train set 1.806x speedup, test set 1.180x speedup, val set 0.477x speedup, step: 4
+Epoch 12/300 |loss: 0.002210| train set 1.731x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 13/300 |loss: 0.001760| train set 1.776x speedup, test set 1.431x speedup, val set 0.477x speedup, step: 2
+Epoch 14/300 |loss: 0.001409| train set 1.776x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 15/300 |loss: 0.001607| train set 1.791x speedup, test set 1.641x speedup, val set 0.477x speedup, step: 2
+Epoch 16/300 |loss: 0.001572| train set 1.808x speedup, test set 1.156x speedup, val set 1.000x speedup, step: 1
+Epoch 17/300 |loss: 0.001194| train set 1.807x speedup, test set 1.589x speedup, val set 1.000x speedup, step: 1
+Epoch 18/300 |loss: 0.001316| train set 1.809x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001126| train set 1.810x speedup, test set 1.527x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001076| train set 1.810x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001079| train set 1.805x speedup, test set 1.234x speedup, val set 1.000x speedup, step: 1
+Epoch 22/300 |loss: 0.001100| train set 1.807x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 23/300 |loss: 0.001111| train set 1.776x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 24/300 |loss: 0.001137| train set 1.775x speedup, test set 1.132x speedup, val set 1.000x speedup, step: 1
+Epoch 25/300 |loss: 0.001096| train set 1.774x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 26/300 |loss: 0.001042| train set 1.808x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 27/300 |loss: 0.001056| train set 1.773x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 28/300 |loss: 0.001155| train set 1.806x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 29/300 |loss: 0.001133| train set 1.786x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+early stopping at epoch 29
+Training per epoch cost 0.549 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 40.281s, pg runtime 91.784s, speedup 2.279x
+02, opt runtime 29.763s, model runtime 40.217s, pg runtime 91.648s, speedup 2.279x
+03, opt runtime 30.267s, model runtime 43.737s, pg runtime 100.885s, speedup 2.307x
+04, opt runtime 29.286s, model runtime 40.230s, pg runtime 92.131s, speedup 2.290x
+05, opt runtime 29.269s, model runtime 42.511s, pg runtime 91.296s, speedup 2.148x
+06, opt runtime 29.502s, model runtime 47.174s, pg runtime 112.305s, speedup 2.381x
+07, opt runtime 27.886s, model runtime 41.362s, pg runtime 97.629s, speedup 2.360x
+08, opt runtime 30.705s, model runtime 40.366s, pg runtime 89.698s, speedup 2.222x
+09, opt runtime 27.651s, model runtime 41.883s, pg runtime 91.255s, speedup 2.179x
+10, opt runtime 33.637s, model runtime 39.619s, pg runtime 90.618s, speedup 2.287x
+11, opt runtime 53.298s, model runtime 152.039s, pg runtime 148.707s, speedup 0.978x
+12, opt runtime 48.784s, model runtime 177.310s, pg runtime 78.349s, speedup 0.442x
+13, opt runtime 53.440s, model runtime 154.450s, pg runtime 140.742s, speedup 0.911x
+14, opt runtime 47.812s, model runtime 171.862s, pg runtime 83.069s, speedup 0.483x
+15, opt runtime 47.518s, model runtime 171.388s, pg runtime 75.736s, speedup 0.442x
+16, opt runtime 48.067s, model runtime 170.211s, pg runtime 81.014s, speedup 0.476x
+17, opt runtime 47.738s, model runtime 170.931s, pg runtime 76.021s, speedup 0.445x
+18, opt runtime 47.804s, model runtime 170.185s, pg runtime 81.177s, speedup 0.477x
+19, opt runtime 49.511s, model runtime 188.090s, pg runtime 87.329s, speedup 0.464x
+20, opt runtime 51.276s, model runtime 170.376s, pg runtime 79.222s, speedup 0.465x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 19, train speedup 1.810, test speedup 1.527, val speedup 1.000
+best test speedup epoch: 0, train speedup 0.788, test speedup 2.507, val speedup 0.691
+best validation speedup epoch: 29, train speedup 1.786, test speedup 1.147, val speedup 1.000
+last model at epoch 29, train speedup 1.786, test speedup 1.147, val speedup 1.000
+execution cost 0:00:35.926667
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+test templates:  ['7', '28', '31', '16', '19', '17', '20']
+test queries:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+test query:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+load JOB succ
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:00.912969, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.046358| train set 0.788x speedup, test set 2.507x speedup, val set 0.691x speedup, step: 1
+Epoch 1/300 |loss: 0.012202| train set 1.340x speedup, test set 1.256x speedup, val set 0.348x speedup, step: 2
+Epoch 2/300 |loss: 0.007256| train set 1.432x speedup, test set 1.743x speedup, val set 0.501x speedup, step: 3
+Epoch 3/300 |loss: 0.006084| train set 1.451x speedup, test set 1.732x speedup, val set 0.348x speedup, step: 4
+Epoch 4/300 |loss: 0.005498| train set 1.512x speedup, test set 1.760x speedup, val set 0.501x speedup, step: 5
+Epoch 5/300 |loss: 0.004903| train set 1.530x speedup, test set 1.410x speedup, val set 0.501x speedup, step: 6
+Epoch 6/300 |loss: 0.004352| train set 1.444x speedup, test set 1.410x speedup, val set 0.501x speedup, step: 7
+Epoch 7/300 |loss: 0.004347| train set 1.545x speedup, test set 1.515x speedup, val set 0.822x speedup, step: 1
+Epoch 8/300 |loss: 0.003633| train set 1.764x speedup, test set 1.431x speedup, val set 0.822x speedup, step: 1
+Epoch 9/300 |loss: 0.002758| train set 1.786x speedup, test set 1.162x speedup, val set 0.450x speedup, step: 2
+Epoch 10/300 |loss: 0.002937| train set 1.809x speedup, test set 1.162x speedup, val set 0.450x speedup, step: 3
+Epoch 11/300 |loss: 0.002289| train set 1.806x speedup, test set 1.162x speedup, val set 0.477x speedup, step: 4
+Epoch 12/300 |loss: 0.002018| train set 1.730x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 13/300 |loss: 0.001590| train set 1.776x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 14/300 |loss: 0.001271| train set 1.774x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 15/300 |loss: 0.001679| train set 1.810x speedup, test set 1.234x speedup, val set 0.450x speedup, step: 2
+Epoch 16/300 |loss: 0.001876| train set 1.809x speedup, test set 1.114x speedup, val set 0.822x speedup, step: 1
+Epoch 17/300 |loss: 0.001313| train set 1.810x speedup, test set 1.220x speedup, val set 1.000x speedup, step: 1
+Epoch 18/300 |loss: 0.001403| train set 1.810x speedup, test set 1.156x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001091| train set 1.810x speedup, test set 1.181x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001028| train set 1.810x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001046| train set 1.810x speedup, test set 1.542x speedup, val set 1.000x speedup, step: 1
+Epoch 22/300 |loss: 0.001079| train set 1.805x speedup, test set 1.191x speedup, val set 1.000x speedup, step: 1
+Epoch 23/300 |loss: 0.001108| train set 1.810x speedup, test set 1.147x speedup, val set 0.887x speedup, step: 2
+Epoch 24/300 |loss: 0.001050| train set 1.775x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 25/300 |loss: 0.001122| train set 1.809x speedup, test set 1.147x speedup, val set 0.887x speedup, step: 2
+Epoch 26/300 |loss: 0.001028| train set 1.807x speedup, test set 1.512x speedup, val set 0.887x speedup, step: 3
+Epoch 27/300 |loss: 0.001017| train set 1.775x speedup, test set 1.512x speedup, val set 1.000x speedup, step: 1
+Epoch 28/300 |loss: 0.001206| train set 1.810x speedup, test set 1.147x speedup, val set 0.887x speedup, step: 2
+Epoch 29/300 |loss: 0.001119| train set 1.790x speedup, test set 1.164x speedup, val set 1.000x speedup, step: 1
+early stopping at epoch 29
+Training per epoch cost 0.520 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 40.281s, pg runtime 91.784s, speedup 2.279x
+02, opt runtime 29.763s, model runtime 40.217s, pg runtime 91.648s, speedup 2.279x
+03, opt runtime 30.267s, model runtime 43.737s, pg runtime 100.885s, speedup 2.307x
+04, opt runtime 29.286s, model runtime 40.230s, pg runtime 92.131s, speedup 2.290x
+05, opt runtime 29.269s, model runtime 42.511s, pg runtime 91.296s, speedup 2.148x
+06, opt runtime 29.502s, model runtime 47.174s, pg runtime 112.305s, speedup 2.381x
+07, opt runtime 27.886s, model runtime 41.362s, pg runtime 97.629s, speedup 2.360x
+08, opt runtime 30.705s, model runtime 40.366s, pg runtime 89.698s, speedup 2.222x
+09, opt runtime 27.651s, model runtime 41.883s, pg runtime 91.255s, speedup 2.179x
+10, opt runtime 33.637s, model runtime 39.619s, pg runtime 90.618s, speedup 2.287x
+11, opt runtime 53.298s, model runtime 152.039s, pg runtime 148.707s, speedup 0.978x
+12, opt runtime 48.784s, model runtime 177.310s, pg runtime 78.349s, speedup 0.442x
+13, opt runtime 53.440s, model runtime 154.450s, pg runtime 140.742s, speedup 0.911x
+14, opt runtime 47.812s, model runtime 171.862s, pg runtime 83.069s, speedup 0.483x
+15, opt runtime 47.518s, model runtime 171.388s, pg runtime 75.736s, speedup 0.442x
+16, opt runtime 48.067s, model runtime 170.211s, pg runtime 81.014s, speedup 0.476x
+17, opt runtime 47.738s, model runtime 83.106s, pg runtime 76.021s, speedup 0.915x
+18, opt runtime 47.804s, model runtime 170.185s, pg runtime 81.177s, speedup 0.477x
+19, opt runtime 49.511s, model runtime 188.090s, pg runtime 87.329s, speedup 0.464x
+20, opt runtime 51.276s, model runtime 84.921s, pg runtime 79.222s, speedup 0.933x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 17, train speedup 1.810, test speedup 1.220, val speedup 1.000
+best test speedup epoch: 0, train speedup 0.788, test speedup 2.507, val speedup 0.691
+best validation speedup epoch: 29, train speedup 1.790, test speedup 1.164, val speedup 1.000
+last model at epoch 29, train speedup 1.790, test speedup 1.164, val speedup 1.000
+execution cost 0:00:35.262258
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+test templates:  ['7', '28', '31', '16', '19', '17', '20']
+test queries:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+test query:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+load JOB succ
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:00.955779, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.046358| train set 0.788x speedup, test set 2.507x speedup, val set 0.691x speedup, step: 1
+Epoch 1/300 |loss: 0.012202| train set 1.340x speedup, test set 1.256x speedup, val set 0.348x speedup, step: 2
+Epoch 2/300 |loss: 0.007253| train set 1.433x speedup, test set 1.765x speedup, val set 0.501x speedup, step: 3
+Epoch 3/300 |loss: 0.006105| train set 1.450x speedup, test set 2.752x speedup, val set 0.348x speedup, step: 4
+Epoch 4/300 |loss: 0.005511| train set 1.537x speedup, test set 1.760x speedup, val set 0.501x speedup, step: 5
+Epoch 5/300 |loss: 0.005147| train set 1.530x speedup, test set 1.405x speedup, val set 0.501x speedup, step: 6
+Epoch 6/300 |loss: 0.004138| train set 1.444x speedup, test set 1.594x speedup, val set 0.501x speedup, step: 7
+Epoch 7/300 |loss: 0.004352| train set 1.761x speedup, test set 1.501x speedup, val set 0.822x speedup, step: 1
+Epoch 8/300 |loss: 0.003791| train set 1.551x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 9/300 |loss: 0.002623| train set 1.790x speedup, test set 1.162x speedup, val set 0.477x speedup, step: 2
+Epoch 10/300 |loss: 0.002719| train set 1.793x speedup, test set 1.162x speedup, val set 0.450x speedup, step: 3
+Epoch 11/300 |loss: 0.002270| train set 1.810x speedup, test set 1.190x speedup, val set 0.477x speedup, step: 4
+Epoch 12/300 |loss: 0.002059| train set 1.730x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 13/300 |loss: 0.001619| train set 1.776x speedup, test set 1.405x speedup, val set 0.820x speedup, step: 2
+Epoch 14/300 |loss: 0.001305| train set 1.776x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 15/300 |loss: 0.001647| train set 1.791x speedup, test set 1.220x speedup, val set 0.820x speedup, step: 2
+Epoch 16/300 |loss: 0.001992| train set 1.807x speedup, test set 1.084x speedup, val set 1.000x speedup, step: 1
+Epoch 17/300 |loss: 0.001304| train set 1.789x speedup, test set 1.149x speedup, val set 1.000x speedup, step: 1
+Epoch 18/300 |loss: 0.001225| train set 1.810x speedup, test set 1.084x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001122| train set 1.809x speedup, test set 1.149x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001049| train set 1.810x speedup, test set 1.140x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001065| train set 1.808x speedup, test set 1.115x speedup, val set 1.000x speedup, step: 1
+Epoch 22/300 |loss: 0.001173| train set 1.808x speedup, test set 1.084x speedup, val set 1.000x speedup, step: 1
+Epoch 23/300 |loss: 0.001145| train set 1.810x speedup, test set 1.084x speedup, val set 1.000x speedup, step: 1
+Epoch 24/300 |loss: 0.001053| train set 1.775x speedup, test set 1.084x speedup, val set 1.000x speedup, step: 1
+Epoch 25/300 |loss: 0.001232| train set 1.774x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 26/300 |loss: 0.001066| train set 1.809x speedup, test set 1.084x speedup, val set 0.928x speedup, step: 2
+Epoch 27/300 |loss: 0.001048| train set 1.774x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 28/300 |loss: 0.001193| train set 1.776x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 29/300 |loss: 0.001067| train set 1.806x speedup, test set 1.164x speedup, val set 1.000x speedup, step: 1
+early stopping at epoch 29
+Training per epoch cost 0.518 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 40.281s, pg runtime 91.784s, speedup 2.279x
+02, opt runtime 29.763s, model runtime 40.217s, pg runtime 91.648s, speedup 2.279x
+03, opt runtime 30.267s, model runtime 43.737s, pg runtime 100.885s, speedup 2.307x
+04, opt runtime 29.286s, model runtime 40.230s, pg runtime 92.131s, speedup 2.290x
+05, opt runtime 29.269s, model runtime 42.511s, pg runtime 91.296s, speedup 2.148x
+06, opt runtime 29.502s, model runtime 47.174s, pg runtime 112.305s, speedup 2.381x
+07, opt runtime 27.886s, model runtime 41.362s, pg runtime 97.629s, speedup 2.360x
+08, opt runtime 30.705s, model runtime 40.366s, pg runtime 89.698s, speedup 2.222x
+09, opt runtime 27.651s, model runtime 41.883s, pg runtime 91.255s, speedup 2.179x
+10, opt runtime 33.637s, model runtime 39.619s, pg runtime 90.618s, speedup 2.287x
+11, opt runtime 53.298s, model runtime 152.039s, pg runtime 148.707s, speedup 0.978x
+12, opt runtime 48.784s, model runtime 177.310s, pg runtime 78.349s, speedup 0.442x
+13, opt runtime 53.440s, model runtime 154.450s, pg runtime 140.742s, speedup 0.911x
+14, opt runtime 47.812s, model runtime 171.862s, pg runtime 83.069s, speedup 0.483x
+15, opt runtime 47.518s, model runtime 171.388s, pg runtime 75.736s, speedup 0.442x
+16, opt runtime 48.067s, model runtime 170.211s, pg runtime 81.014s, speedup 0.476x
+17, opt runtime 47.738s, model runtime 83.106s, pg runtime 76.021s, speedup 0.915x
+18, opt runtime 47.804s, model runtime 170.185s, pg runtime 81.177s, speedup 0.477x
+19, opt runtime 49.511s, model runtime 188.090s, pg runtime 87.329s, speedup 0.464x
+20, opt runtime 51.276s, model runtime 84.921s, pg runtime 79.222s, speedup 0.933x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 11, train speedup 1.810, test speedup 1.190, val speedup 0.477
+best test speedup epoch: 3, train speedup 1.450, test speedup 2.752, val speedup 0.348
+best validation speedup epoch: 29, train speedup 1.806, test speedup 1.164, val speedup 1.000
+last model at epoch 29, train speedup 1.806, test speedup 1.164, val speedup 1.000
+execution cost 0:00:35.401263
+==================================================
+all print will write to path record/postgresql/TPCH/TCNN/slow_split/point
+==================================================
+Model: <class 'src.models.TCNN.TCNN'>
+NUM_HINT_SET: 49
+app: point
+batch_size: 128
+candidate_list: 30
+data_root_path: ./db_benchmark_datasets
+dataset: TPCH
+dbms: postgresql
+epochs: 300
+execute_sql: 0
+expname: main_adhoc
+grain: adhoc
+lr: 0.001
+meta_save_path: record/postgresql/TPCH/execute_sql
+model: TCNN
+npseed: 42
+pairwise: False
+parameter: 
+pre_execute_all: 0
+sample_num: 1000
+sampling: -1
+save_path: record/postgresql/TPCH/TCNN/slow_split/point
+seed: 42
+shuffle_num: 1
+slow: 1
+split_ratio: 0.1
+src: JOB
+tgt: TPCH
+tolerance: 10
+train: 1
+weighted: False
+
+Loaded number of JOB queries: 113
+(113, 49)
+(113, 49)
+21a.sql
+test templates:  ['7', '28', '31', '16', '19', '17', '20']
+test queries:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+test query:  ['16a.sql' '16b.sql' '16c.sql' '16d.sql' '17b.sql' '17f.sql' '17d.sql'
+ '17c.sql' '17a.sql' '17e.sql' '19a.sql' '19d.sql' '19c.sql' '19b.sql'
+ '20b.sql' '20a.sql' '20c.sql' '28c.sql' '28b.sql' '28a.sql' '31b.sql'
+ '31a.sql' '31c.sql' '7b.sql' '7c.sql' '7a.sql']
+load JOB succ
+load TPCH...
+TPCH test template [17, 20, 3, 9]
+load TPCH succ
+train, test, validation (140, 49) (40, 49) (20, 49)
+construct training samples cost 0:00:00.914500, and there are 6860 training samples
+in channel 9
+Epoch 0/300 |loss: 0.046358| train set 0.788x speedup, test set 2.507x speedup, val set 0.691x speedup, step: 1
+Epoch 1/300 |loss: 0.012202| train set 1.340x speedup, test set 1.256x speedup, val set 0.348x speedup, step: 2
+Epoch 2/300 |loss: 0.007253| train set 1.433x speedup, test set 1.765x speedup, val set 0.501x speedup, step: 3
+Epoch 3/300 |loss: 0.006105| train set 1.450x speedup, test set 2.752x speedup, val set 0.348x speedup, step: 4
+Epoch 4/300 |loss: 0.005510| train set 1.537x speedup, test set 1.760x speedup, val set 0.501x speedup, step: 5
+Epoch 5/300 |loss: 0.005133| train set 1.530x speedup, test set 1.405x speedup, val set 0.501x speedup, step: 6
+Epoch 6/300 |loss: 0.004113| train set 1.444x speedup, test set 1.745x speedup, val set 0.501x speedup, step: 7
+Epoch 7/300 |loss: 0.004174| train set 1.545x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 8/300 |loss: 0.003729| train set 1.551x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 9/300 |loss: 0.002724| train set 1.791x speedup, test set 1.217x speedup, val set 0.477x speedup, step: 2
+Epoch 10/300 |loss: 0.002822| train set 1.785x speedup, test set 1.664x speedup, val set 0.477x speedup, step: 3
+Epoch 11/300 |loss: 0.002315| train set 1.786x speedup, test set 1.270x speedup, val set 0.477x speedup, step: 4
+Epoch 12/300 |loss: 0.002183| train set 1.727x speedup, test set 1.405x speedup, val set 0.822x speedup, step: 1
+Epoch 13/300 |loss: 0.001689| train set 1.810x speedup, test set 1.515x speedup, val set 0.501x speedup, step: 2
+Epoch 14/300 |loss: 0.001306| train set 1.776x speedup, test set 1.405x speedup, val set 1.000x speedup, step: 1
+Epoch 15/300 |loss: 0.001778| train set 1.791x speedup, test set 1.942x speedup, val set 0.477x speedup, step: 2
+Epoch 16/300 |loss: 0.002264| train set 1.748x speedup, test set 1.405x speedup, val set 1.000x speedup, step: 1
+Epoch 17/300 |loss: 0.001345| train set 1.762x speedup, test set 1.227x speedup, val set 1.000x speedup, step: 1
+Epoch 18/300 |loss: 0.001659| train set 1.805x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 19/300 |loss: 0.001199| train set 1.810x speedup, test set 1.227x speedup, val set 1.000x speedup, step: 1
+Epoch 20/300 |loss: 0.001043| train set 1.810x speedup, test set 1.156x speedup, val set 1.000x speedup, step: 1
+Epoch 21/300 |loss: 0.001050| train set 1.809x speedup, test set 1.220x speedup, val set 1.000x speedup, step: 1
+Epoch 22/300 |loss: 0.001074| train set 1.803x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 23/300 |loss: 0.001044| train set 1.775x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 24/300 |loss: 0.001041| train set 1.809x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 25/300 |loss: 0.001201| train set 1.774x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 26/300 |loss: 0.001076| train set 1.807x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 27/300 |loss: 0.001037| train set 1.773x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 28/300 |loss: 0.001074| train set 1.810x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+Epoch 29/300 |loss: 0.001046| train set 1.806x speedup, test set 1.147x speedup, val set 1.000x speedup, step: 1
+early stopping at epoch 29
+Training per epoch cost 0.515 s
+Optimal speedup on test set is 11.153x
+01, opt runtime 28.639s, model runtime 40.281s, pg runtime 91.784s, speedup 2.279x
+02, opt runtime 29.763s, model runtime 40.217s, pg runtime 91.648s, speedup 2.279x
+03, opt runtime 30.267s, model runtime 43.737s, pg runtime 100.885s, speedup 2.307x
+04, opt runtime 29.286s, model runtime 40.230s, pg runtime 92.131s, speedup 2.290x
+05, opt runtime 29.269s, model runtime 42.511s, pg runtime 91.296s, speedup 2.148x
+06, opt runtime 29.502s, model runtime 47.174s, pg runtime 112.305s, speedup 2.381x
+07, opt runtime 27.886s, model runtime 41.362s, pg runtime 97.629s, speedup 2.360x
+08, opt runtime 30.705s, model runtime 40.366s, pg runtime 89.698s, speedup 2.222x
+09, opt runtime 27.651s, model runtime 41.883s, pg runtime 91.255s, speedup 2.179x
+10, opt runtime 33.637s, model runtime 39.619s, pg runtime 90.618s, speedup 2.287x
+11, opt runtime 53.298s, model runtime 152.039s, pg runtime 148.707s, speedup 0.978x
+12, opt runtime 48.784s, model runtime 177.310s, pg runtime 78.349s, speedup 0.442x
+13, opt runtime 53.440s, model runtime 154.450s, pg runtime 140.742s, speedup 0.911x
+14, opt runtime 47.812s, model runtime 171.862s, pg runtime 83.069s, speedup 0.483x
+15, opt runtime 47.518s, model runtime 171.388s, pg runtime 75.736s, speedup 0.442x
+16, opt runtime 48.067s, model runtime 170.211s, pg runtime 81.014s, speedup 0.476x
+17, opt runtime 47.738s, model runtime 170.931s, pg runtime 76.021s, speedup 0.445x
+18, opt runtime 47.804s, model runtime 170.185s, pg runtime 81.177s, speedup 0.477x
+19, opt runtime 49.511s, model runtime 188.090s, pg runtime 87.329s, speedup 0.464x
+20, opt runtime 51.276s, model runtime 170.376s, pg runtime 79.222s, speedup 0.465x
+21, opt runtime 24.391s, model runtime 597.697s, pg runtime 601.866s, speedup 1.007x
+22, opt runtime 24.079s, model runtime 600.642s, pg runtime 608.707s, speedup 1.013x
+23, opt runtime 24.662s, model runtime 609.600s, pg runtime 613.999s, speedup 1.007x
+24, opt runtime 24.459s, model runtime 604.056s, pg runtime 608.717s, speedup 1.008x
+25, opt runtime 25.236s, model runtime 618.593s, pg runtime 601.756s, speedup 0.973x
+26, opt runtime 25.363s, model runtime 607.433s, pg runtime 611.327s, speedup 1.006x
+27, opt runtime 24.706s, model runtime 596.799s, pg runtime 610.808s, speedup 1.023x
+28, opt runtime 25.075s, model runtime 607.146s, pg runtime 612.430s, speedup 1.009x
+29, opt runtime 24.840s, model runtime 613.317s, pg runtime 626.529s, speedup 1.022x
+30, opt runtime 24.920s, model runtime 600.533s, pg runtime 610.993s, speedup 1.017x
+31, opt runtime 16.268s, model runtime 349.951s, pg runtime 432.766s, speedup 1.237x
+32, opt runtime 15.120s, model runtime 350.307s, pg runtime 566.078s, speedup 1.616x
+33, opt runtime 16.639s, model runtime 343.997s, pg runtime 462.544s, speedup 1.345x
+34, opt runtime 16.280s, model runtime 379.482s, pg runtime 634.990s, speedup 1.673x
+35, opt runtime 16.528s, model runtime 362.680s, pg runtime 620.762s, speedup 1.712x
+36, opt runtime 18.690s, model runtime 356.056s, pg runtime 651.942s, speedup 1.831x
+37, opt runtime 16.438s, model runtime 349.045s, pg runtime 546.887s, speedup 1.567x
+38, opt runtime 16.138s, model runtime 349.458s, pg runtime 501.793s, speedup 1.436x
+39, opt runtime 16.770s, model runtime 354.159s, pg runtime 594.754s, speedup 1.679x
+40, opt runtime 16.305s, model runtime 348.685s, pg runtime 436.168s, speedup 1.251x
+====================
+best train speedup epoch: 28, train speedup 1.810, test speedup 1.147, val speedup 1.000
+best test speedup epoch: 3, train speedup 1.450, test speedup 2.752, val speedup 0.348
+best validation speedup epoch: 29, train speedup 1.806, test speedup 1.147, val speedup 1.000
+last model at epoch 29, train speedup 1.806, test speedup 1.147, val speedup 1.000
+execution cost 0:00:36.073702
+==================================================
